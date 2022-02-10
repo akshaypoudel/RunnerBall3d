@@ -1,0 +1,179 @@
+{
+    "m_SelectedDeviceId": "a42868cf",
+    "m_SelectedPackage": {
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "a42868cf",
+            "name": "com.Akshay.RuNNerBaLL3D",
+            "processId": 10417,
+            "exited": true
+        },
+        {
+            "deviceId": "a42868cf",
+            "name": "com.android.settings",
+            "processId": 24511,
+            "exited": true
+        },
+        {
+            "deviceId": "a42868cf",
+            "name": "com.Akshay.RuNNerBaLL3D",
+            "processId": 26253,
+            "exited": true
+        },
+        {
+            "deviceId": "a42868cf",
+            "name": "com.miui.home",
+            "processId": 14331,
+            "exited": false
+        },
+        {
+            "deviceId": "a42868cf",
+            "name": "com.Akshay.RuNNerBaLL3D",
+            "processId": 25803,
+            "exited": true
+        },
+        {
+            "deviceId": "a42868cf",
+            "name": "com.Akshay.RuNNerBaLL3D",
+            "processId": 25194,
+            "exited": true
+        },
+        {
+            "deviceId": "a42868cf",
+            "name": "com.Akshay.RuNNerBaLL3D",
+            "processId": 29588,
+            "exited": false
+        },
+        {
+            "deviceId": "29609151",
+            "name": "com.Akshay.BallRunnerGameThreeD.New3DBaLLRuNNer",
+            "processId": 21534,
+            "exited": true
+        },
+        {
+            "deviceId": "29609151",
+            "name": "com.Akshay.BallRunnerGameThreeD.New3DBaLLRuNNer",
+            "processId": 23228,
+            "exited": true
+        },
+        {
+            "deviceId": "29609151",
+            "name": "com.Akshay.BallRunnerGameThreeD.New3DBaLLRuNNer",
+            "processId": 7505,
+            "exited": false
+        },
+        {
+            "deviceId": "29609151",
+            "name": "com.Akshay.BallRunnerGameThreeD.New3DBaLLRuNNer",
+            "processId": 12953,
+            "exited": false
+        },
+        {
+            "deviceId": "29609151",
+            "name": "com.Akshay.BallRunnerGameThreeD.New3DBaLLRuNNer",
+            "processId": 31382,
+            "exited": false
+        },
+        {
+            "deviceId": "29609151",
+            "name": "com.Akshay.BallRunnerGameThreeD.New3DBaLLRuNNer",
+            "processId": 590,
+            "exited": false
+        },
+        {
+            "deviceId": "29609151",
+            "name": "com.Akshay.RuNNerBaLL3D",
+            "processId": 17347,
+            "exited": false
+        },
+        {
+            "deviceId": "RZ8M41Z2DNH",
+            "name": "com.Akshay.BallRunnerGameThreeD.New3DBaLLRuNNer",
+            "processId": 30776,
+            "exited": true
+        },
+        {
+            "deviceId": "RZ8M41Z2DNH",
+            "name": "com.Akshay.BallRunnerGameThreeD.New3DBaLLRuNNer",
+            "processId": 15329,
+            "exited": true
+        },
+        {
+            "deviceId": "RZ8M41Z2DNH",
+            "name": "com.Akshay.RuNNerBaLL3D",
+            "processId": 9778,
+            "exited": true
+        },
+        {
+            "deviceId": "RZ8M41Z2DNH",
+            "name": "com.Akshay.RuNNerBaLL3D",
+            "processId": 15832,
+            "exited": true
+        },
+        {
+            "deviceId": "RZ8M41Z2DNH",
+            "name": "com.Akshay.RuNNerBaLL3D",
+            "processId": 7535,
+            "exited": true
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}
