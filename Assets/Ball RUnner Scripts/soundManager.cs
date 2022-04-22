@@ -2,28 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class soundManager : MonoBehaviour
+public static class SoundManager
 {
-    public bool muted = false;
-    public ParticleSystem stars;
-    // Update is called once per frame
-    void Start()
+    public static float volume;
+    public enum Sound
     {
-        Time.timeScale=1f;
-        stars.Play();
+        DonutCollect,
+        DiamondCollect,
+        Jump,
+        GameOver,
+        AliveAgain
     }
 
-    public void onbuttonpress()
+    public static void PlaySound(Sound sound)
     {
-        if(muted==false)
-        {
-            muted = true;
-            AudioListener.pause = true;
-        }
-        else
-        {
-            muted = false;
-            AudioListener.pause = false;
-        }
+        GameObject soundGameObject = new GameObject("Sound");
+        AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
+        audioSource.PlayOneShot(GetAudioClip(sound), volume);
+        Object.Destroy(soundGameObject, 2);
     }
+    public static void Mute()
+    {
+        AudioListener.volume = 0;
+    }
+    public static void AudioResume()
+    {
+        AudioListener.volume = 1;
+    }
+    private static AudioClip GetAudioClip(Sound sound)
+    {
+        foreach (GameAssets.SoundAudioClip soundAudioClip in GameAssets.i.soundAudioClipArray)
+        {
+            if (soundAudioClip.sound == sound)
+            {
+                return soundAudioClip.audioClip;
+            }
+        }
+        return null;
+    }
+
 }

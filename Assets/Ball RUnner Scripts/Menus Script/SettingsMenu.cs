@@ -1,28 +1,265 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 
 public class SettingsMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
-    public void SetVolume(float volume)
+    public bool isGameScene;
+    public MoveLogic moveLogic;
+    PlayerPrefsSaveSystem playerPrefsSaveSystem = new PlayerPrefsSaveSystem();
+    public TMP_Text donutText;
+
+    public GameObject qualityDropdownMenu;
+    public GameObject SelectControls;
+    public GameObject touchControlSelectedButton;
+    public GameObject gyroControlSelectedButton;
+    private GameObject BGAudioGameObject;
+
+
+    public static string qualitySettingsPrefs = "qualitySettings" ;
+    public static string FirstTimePlayingPrefs = "Controls" ;
+    public static string nameOfScenePrefs = "nameOfScene" ;
+    public static string whichControls = "PrefsControls" ;
+    public static string bgAudioPref = "BackGroundAudio" ;
+    public static string sfxAudioPref = "SFXAudio" ;
+
+
+    public Slider MusicSlider;
+    public Slider SFXSlider;
+    public Slider LoadingMenuSlider;
+
+
+    public AudioSource BackGroundAudioSource;
+    public AudioSource[] SoundEffects;
+
+
+    public GameObject loadingScreen;
+    public TMP_Text progressText;
+
+    private void Awake()
     {
-        if (volume == -20)
+        if (BackGroundAudioSource == null && isGameScene)
         {
-            soundManager manager=new soundManager();
-            manager.onbuttonpress();
-            Debug.Log("Volume changed : " + volume);
+            BGAudioGameObject = GameObject.FindWithTag("Audio");
+            BackGroundAudioSource = BGAudioGameObject.GetComponent<AudioSource>();
         }
-        else
-        {
-            audioMixer.SetFloat("MyVolume", volume);
-        }
+        CheckAndLoadSettings();
     }
     
+
+
+    private void Start()
+    {
+            if (!isGameScene)
+                donutText.text = MoveLogic.numberOfDonuts.ToString();
+            CheckAndLoadSettings();
+
+    }
+    private void CheckAndLoadSettings()
+    {
+        CheckControlsAndLoadGame();
+        CheckBackGroundAudioAndLoad();
+        CheckSFXAudioAndLoad();
+        CheckQualitySettingsAndLoad();
+    }
+    #region QualitySettings
+    private void CheckQualitySettingsAndLoad()
+    {
+        if (!PlayerPrefs.HasKey(qualitySettingsPrefs))
+        {
+            PlayerPrefs.SetInt(qualitySettingsPrefs, 0);
+            LoadQualitySettings();
+        }
+        else
+            LoadQualitySettings();
+    }
+    public void LoadQualitySettings()
+    {
+        int qualityIndex = PlayerPrefs.GetInt(qualitySettingsPrefs);
+        qualityDropdownMenu.GetComponent<Dropdown>().value = qualityIndex;
+        QualitySettings.SetQualityLevel(qualityIndex);
+    }
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
+        SaveQualitySettings(qualityIndex);
     }
+    public void SaveQualitySettings(int SaveIndex)
+    {
+        PlayerPrefs.SetInt(qualitySettingsPrefs, SaveIndex);
+    }
+    #endregion
+
+    #region Controls
+
+    private void CheckControlsAndLoadGame()
+    {
+        if (PlayerPrefs.HasKey(FirstTimePlayingPrefs))
+        {
+            if (PlayerPrefs.GetInt(whichControls) == 0)
+                touchControlSelectedButton.SetActive(true);
+            else if (PlayerPrefs.GetInt(whichControls) == 1)
+                gyroControlSelectedButton.SetActive(true);
+        }
+    }
+    public void CheckControlsAndLoadLevel(int SceneIndex)
+    {
+        if(PlayerPrefs.HasKey(FirstTimePlayingPrefs))
+        {
+            loadingScreen.SetActive(true);
+
+            StartCoroutine(LoadAsynchronously(SceneIndex));
+        }
+        else
+        {
+            PlayerPrefs.SetInt(nameOfScenePrefs, SceneIndex);
+            SelectControls.SetActive(true);
+        }
+    }
+    public void TouchControlLoadGame()
+    {
+        PlayerPrefs.SetInt(whichControls, 0);
+        PlayerPrefs.SetInt(FirstTimePlayingPrefs, 1);
+        loadingScreen.SetActive(true);
+        StartCoroutine(LoadAsynchronously(PlayerPrefs.GetInt(nameOfScenePrefs)));
+    }
+    public void GyroControlLoadGame()
+    {
+        PlayerPrefs.SetInt(whichControls, 1);
+        PlayerPrefs.SetInt(FirstTimePlayingPrefs, 1);
+        loadingScreen.SetActive(true);
+
+        StartCoroutine(LoadAsynchronously(PlayerPrefs.GetInt(nameOfScenePrefs)));
+    }
+    IEnumerator LoadAsynchronously(int a)
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(a);
+        while (!operation.isDone)
+        {
+            float progress = Mathf.Clamp01(operation.progress / 0.9f);
+            LoadingMenuSlider.value = progress;
+            float p1 = progress * 100f;
+            progressText.text = (int)p1 + "%";
+            yield return null;
+        }
+    }
+    public void SaveTouchControls()
+    {
+        PlayerPrefs.SetInt(whichControls, 0);
+        if (isGameScene)
+            moveLogic.tempControlsValue = PlayerPrefs.GetInt(whichControls);
+    }
+    public void SaveGyroControls()
+    {
+        PlayerPrefs.SetInt(whichControls, 1);
+        if (isGameScene)
+            moveLogic.tempControlsValue = PlayerPrefs.GetInt(whichControls);
+    }
+
+
+
+    #endregion
+
+    #region BackGroundAudios
+
+    private void CheckBackGroundAudioAndLoad()
+    {
+        if (!PlayerPrefs.HasKey(bgAudioPref))
+        {
+            PlayerPrefs.SetFloat(bgAudioPref, 1);
+            LoadBackGroundAudio();
+        }
+        else
+        {
+            LoadBackGroundAudio();
+        }
+
+    }
+    public void SetBackGroundAudio()
+    {
+        BackGroundAudioSource.volume = MusicSlider.value;
+        SaveBackGroundAudio();
+    }
+    public void SaveBackGroundAudio()
+    {
+        PlayerPrefs.SetFloat(bgAudioPref, MusicSlider.value);
+    }
+    private void LoadBackGroundAudio()
+    {
+        MusicSlider.value = PlayerPrefs.GetFloat(bgAudioPref);
+        BackGroundAudioSource.volume = PlayerPrefs.GetFloat(bgAudioPref);
+    }
+    #endregion
+
+    #region SFXAudio
+
+    private void CheckSFXAudioAndLoad()
+    {
+        if (!PlayerPrefs.HasKey(sfxAudioPref))
+        {
+            PlayerPrefs.SetFloat(sfxAudioPref, 1);
+            LoadSFXAudio();
+        }
+        else
+        {
+            LoadSFXAudio();
+        }
+    }
+
+    public void SetSFXAudio()
+    {
+        if (!isGameScene)
+        {
+            for (int i = 0; i < SoundEffects.Length; i++)
+            {
+                SoundEffects[i].volume = SFXSlider.value;
+
+            }
+            SaveSFXAudio();
+        }
+        else
+        {
+            SoundManager.volume = SFXSlider.value;
+            SaveSFXAudio();
+        }
+
+    }
+    public void SaveSFXAudio()
+    {
+        PlayerPrefs.SetFloat(sfxAudioPref, SFXSlider.value);
+    }
+    public void LoadSFXAudio()
+    {
+        if (!isGameScene)
+        {
+            for (int i = 0; i < SoundEffects.Length; i++)
+            {
+                SoundEffects[i].volume = SFXSlider.value;
+            }
+            SFXSlider.value = PlayerPrefs.GetFloat(sfxAudioPref);
+        }
+        else
+        {
+            SFXSlider.value = PlayerPrefs.GetFloat(sfxAudioPref);
+            SoundManager.volume = SFXSlider.value;
+        }
+    }
+
+    #endregion
+
+
+
+    public void OpenUrl(string url)
+    {
+        Application.OpenURL(url);
+    }
+
+
+
 }

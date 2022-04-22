@@ -5,7 +5,6 @@ using UnityEngine;
 public class GroundTile2 : MonoBehaviour
 {
     GroundSpawner2 groundSpawner2;
-    // public GameObject SpawnPoint;
 
     private void Start () {
         groundSpawner2 = GameObject.FindObjectOfType<GroundSpawner2>();
@@ -13,14 +12,9 @@ public class GroundTile2 : MonoBehaviour
 
     private void OnTriggerExit (Collider other)
     {
-        if(groundSpawner2==null)
-        {
+        if(groundSpawner2!=null)
+            groundSpawner2.SpawnTile(); 
 
-        Debug.Log("Reference not found of Ground Spawner");
-        }
-        else
-            groundSpawner2.SpawnTile();
-
-        Destroy(gameObject, 5);
+        Destroy(gameObject, 10);
     }
 }

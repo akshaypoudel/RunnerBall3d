@@ -13,8 +13,6 @@ GameObject:
   - component: {fileID: 1574805070362768733}
   - component: {fileID: 1574805070362768730}
   - component: {fileID: 1574805070362768734}
-  - component: {fileID: 1574805070362768672}
-  - component: {fileID: 1574805070362768673}
   - component: {fileID: 1574805070403048964}
   - component: {fileID: 1574805070403048967}
   m_Layer: 0
@@ -117,37 +115,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1574805070362768672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574805070362768731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
---- !u!114 &1574805070362768673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574805070362768731}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 4848417e2216be54e9ac85b47cc578b4, type: 2}
 --- !u!114 &1574805070403048964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,10 +131,14 @@ MonoBehaviour:
   SideScrollSpeed: 12
   jumpDistance: 6
   rb: {fileID: 0}
+  playerMaxDownPosition: 1
   Player: {fileID: 1574805070362768731}
   GameOverUI: {fileID: 0}
   isGrounded: 1
   GameOver: {fileID: 8300000, guid: 2d808ac3d150730409339f56178fdef4, type: 3}
+  speedModifier: 0
+  pauseMenu: {fileID: 0}
+  jump: 5
 --- !u!114 &1574805070403048967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,5 +151,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b099a516c868bf2428d6264069d5bc04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
-  GameOverUI: {fileID: 0}

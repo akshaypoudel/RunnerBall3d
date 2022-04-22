@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/HomeScene.unity
     guid: 6ebe6fe577347804aac1cab714043db3
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/OpenMountainsMap.unity
+    guid: e51af1161ac8bd14cae74802dfc15ff3
   - enabled: 1
     path: Assets/Scenes/SpaceMap.unity
     guid: a847e8606ce5a9449824a1dab0c7a2ad

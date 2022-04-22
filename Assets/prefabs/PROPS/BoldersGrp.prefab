@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1904923019080199649}
   - component: {fileID: 1904923019076775321}
   - component: {fileID: 1904923019077775321}
+  - component: {fileID: 1023864459}
   m_Layer: 0
   m_Name: bolder21
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,6 +83,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1023864459
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036737}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300036, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036739
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,9 +108,10 @@ GameObject:
   - component: {fileID: 1904923019080199651}
   - component: {fileID: 1904923019076775323}
   - component: {fileID: 1904923019077775323}
+  - component: {fileID: 595084923}
   m_Layer: 0
   m_Name: bolder2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,7 +158,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -164,6 +180,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &595084923
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036739}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036741
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,9 +205,10 @@ GameObject:
   - component: {fileID: 1904923019080199653}
   - component: {fileID: 1904923019076775325}
   - component: {fileID: 1904923019077775325}
+  - component: {fileID: 1884718878}
   m_Layer: 0
   m_Name: bolder23
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -224,7 +255,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -246,6 +277,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1884718878
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036741}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300040, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036743
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,9 +302,10 @@ GameObject:
   - component: {fileID: 1904923019080199655}
   - component: {fileID: 1904923019076775327}
   - component: {fileID: 1904923019077775327}
+  - component: {fileID: 1846179726}
   m_Layer: 0
   m_Name: bolder22
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -306,7 +352,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -328,6 +374,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1846179726
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300038, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036745
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,9 +399,10 @@ GameObject:
   - component: {fileID: 1904923019080199657}
   - component: {fileID: 1904923019076775297}
   - component: {fileID: 1904923019077775297}
+  - component: {fileID: 1357827810}
   m_Layer: 0
   m_Name: bolder25
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -388,7 +449,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -410,6 +471,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1357827810
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036745}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300044, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036747
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,9 +496,10 @@ GameObject:
   - component: {fileID: 1904923019080199659}
   - component: {fileID: 1904923019076775299}
   - component: {fileID: 1904923019077775299}
+  - component: {fileID: 673603861}
   m_Layer: 0
   m_Name: bolder24
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -470,7 +546,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -492,6 +568,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &673603861
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036747}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300042, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036749
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,9 +593,10 @@ GameObject:
   - component: {fileID: 1904923019080199661}
   - component: {fileID: 1904923019076775301}
   - component: {fileID: 1904923019077775301}
+  - component: {fileID: 143540756}
   m_Layer: 0
   m_Name: bolder28
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -552,7 +643,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -574,6 +665,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &143540756
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036749}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300048, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036751
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,9 +690,10 @@ GameObject:
   - component: {fileID: 1904923019080199663}
   - component: {fileID: 1904923019076775303}
   - component: {fileID: 1904923019077775303}
+  - component: {fileID: 1624837361}
   m_Layer: 0
   m_Name: bolder27
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -634,7 +740,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -656,6 +762,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1624837361
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036751}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300046, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036753
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,9 +787,10 @@ GameObject:
   - component: {fileID: 1904923019080199665}
   - component: {fileID: 1904923019076775401}
   - component: {fileID: 1904923019077775145}
+  - component: {fileID: 741846151}
   m_Layer: 0
   m_Name: bolder13
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -716,7 +837,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -738,6 +859,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &741846151
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036753}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300022, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036755
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,9 +884,10 @@ GameObject:
   - component: {fileID: 1904923019080199667}
   - component: {fileID: 1904923019076775403}
   - component: {fileID: 1904923019077775147}
+  - component: {fileID: 1671779659}
   m_Layer: 0
   m_Name: bolder12
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -798,7 +934,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -820,6 +956,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1671779659
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300020, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036757
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,9 +981,10 @@ GameObject:
   - component: {fileID: 1904923019080199669}
   - component: {fileID: 1904923019076775405}
   - component: {fileID: 1904923019077775149}
+  - component: {fileID: 155707004}
   m_Layer: 0
   m_Name: bolder15
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -880,7 +1031,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -902,6 +1053,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &155707004
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036757}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300026, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036759
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,9 +1078,10 @@ GameObject:
   - component: {fileID: 1904923019080199671}
   - component: {fileID: 1904923019076775407}
   - component: {fileID: 1904923019077775151}
+  - component: {fileID: 689335731}
   m_Layer: 0
   m_Name: bolder14
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -962,7 +1128,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -984,6 +1150,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &689335731
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036759}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300024, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036761
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,9 +1175,10 @@ GameObject:
   - component: {fileID: 1904923019080199673}
   - component: {fileID: 1904923019076775313}
   - component: {fileID: 1904923019077775313}
+  - component: {fileID: 2089996456}
   m_Layer: 0
   m_Name: bolder17
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1044,7 +1225,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1066,6 +1247,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2089996456
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036761}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300030, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,9 +1272,10 @@ GameObject:
   - component: {fileID: 1904923019080199675}
   - component: {fileID: 1904923019076775315}
   - component: {fileID: 1904923019077775315}
+  - component: {fileID: 865079702}
   m_Layer: 0
   m_Name: bolder16
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1126,7 +1322,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1148,6 +1344,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &865079702
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300028, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,9 +1369,10 @@ GameObject:
   - component: {fileID: 1904923019080199677}
   - component: {fileID: 1904923019076775317}
   - component: {fileID: 1904923019077775317}
+  - component: {fileID: 139211253}
   m_Layer: 0
   m_Name: bolder19
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1208,7 +1419,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1230,6 +1441,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &139211253
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036765}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300034, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,9 +1466,10 @@ GameObject:
   - component: {fileID: 1904923019080199679}
   - component: {fileID: 1904923019076775319}
   - component: {fileID: 1904923019077775319}
+  - component: {fileID: 490757381}
   m_Layer: 0
   m_Name: bolder18
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1290,7 +1516,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1312,6 +1538,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &490757381
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036767}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300032, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,9 +1561,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1904923019080199553}
+  - component: {fileID: 1885394109}
   m_Layer: 0
   m_Name: BoldersGrp
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1335,9 +1576,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904923019080036769}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5999909, y: 0, z: -103.30003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.74, y: 0.8, z: 0.32}
   m_Children:
   - {fileID: 1904923019080199625}
   - {fileID: 1904923019080199651}
@@ -1369,6 +1610,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1885394109
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036769}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1904923019080036785
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,9 +1635,10 @@ GameObject:
   - component: {fileID: 1904923019080199569}
   - component: {fileID: 1904923019076775305}
   - component: {fileID: 1904923019077775305}
+  - component: {fileID: 201417752}
   m_Layer: 0
   m_Name: bolder30
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1429,7 +1685,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1451,6 +1707,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &201417752
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300052, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,9 +1732,10 @@ GameObject:
   - component: {fileID: 1904923019080199571}
   - component: {fileID: 1904923019076775307}
   - component: {fileID: 1904923019077775307}
+  - component: {fileID: 925072039}
   m_Layer: 0
   m_Name: bolder29
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1511,7 +1782,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1533,6 +1804,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &925072039
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036787}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300050, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1544,9 +1829,10 @@ GameObject:
   - component: {fileID: 1904923019080199573}
   - component: {fileID: 1904923019076775309}
   - component: {fileID: 1904923019077775309}
+  - component: {fileID: 899434391}
   m_Layer: 0
   m_Name: bolder5
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1593,7 +1879,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1615,6 +1901,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &899434391
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036789}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300006, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036791
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,9 +1926,10 @@ GameObject:
   - component: {fileID: 1904923019080199575}
   - component: {fileID: 1904923019076775311}
   - component: {fileID: 1904923019077775311}
+  - component: {fileID: 819530806}
   m_Layer: 0
   m_Name: bolder4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1675,7 +1976,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1697,6 +1998,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &819530806
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036791}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300004, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1708,9 +2023,10 @@ GameObject:
   - component: {fileID: 1904923019080199577}
   - component: {fileID: 1904923019076775345}
   - component: {fileID: 1904923019077775345}
+  - component: {fileID: 696541065}
   m_Layer: 0
   m_Name: bolder7
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1757,7 +2073,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1779,6 +2095,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &696541065
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036793}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300010, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1790,9 +2120,10 @@ GameObject:
   - component: {fileID: 1904923019080199579}
   - component: {fileID: 1904923019076775347}
   - component: {fileID: 1904923019077775347}
+  - component: {fileID: 1750560909}
   m_Layer: 0
   m_Name: bolder6
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1839,7 +2170,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1861,6 +2192,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1750560909
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300008, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1872,9 +2217,10 @@ GameObject:
   - component: {fileID: 1904923019080199581}
   - component: {fileID: 1904923019076775349}
   - component: {fileID: 1904923019077775349}
+  - component: {fileID: 1344027663}
   m_Layer: 0
   m_Name: bolder9
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1921,7 +2267,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1943,6 +2289,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1344027663
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036797}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300014, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1954,9 +2314,10 @@ GameObject:
   - component: {fileID: 1904923019080199583}
   - component: {fileID: 1904923019076775351}
   - component: {fileID: 1904923019077775351}
+  - component: {fileID: 707667936}
   m_Layer: 0
   m_Name: bolder8
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2003,7 +2364,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2025,6 +2386,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &707667936
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036799}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300012, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036841
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,9 +2411,10 @@ GameObject:
   - component: {fileID: 1904923019080199625}
   - component: {fileID: 1904923019076775393}
   - component: {fileID: 1904923019077775137}
+  - component: {fileID: 1997691427}
   m_Layer: 0
   m_Name: bolder1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2085,7 +2461,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2107,6 +2483,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1997691427
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036841}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036845
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,9 +2508,10 @@ GameObject:
   - component: {fileID: 1904923019080199629}
   - component: {fileID: 1904923019076775397}
   - component: {fileID: 1904923019077775141}
+  - component: {fileID: 1196120231}
   m_Layer: 0
   m_Name: bolder11
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2167,7 +2558,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2189,6 +2580,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1196120231
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036845}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300018, guid: fde463d1640be964dad05cce1c744989, type: 3}
 --- !u!1 &1904923019080036847
 GameObject:
   m_ObjectHideFlags: 0
@@ -2200,9 +2605,10 @@ GameObject:
   - component: {fileID: 1904923019080199631}
   - component: {fileID: 1904923019076775399}
   - component: {fileID: 1904923019077775143}
+  - component: {fileID: 1446465499}
   m_Layer: 0
   m_Name: bolder10
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2249,7 +2655,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 899845315da045e4abf8a0cd954f7076, type: 2}
+  - {fileID: 2100000, guid: 594c9e2618b97d542bae8e47e544b7f1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2271,3 +2677,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1446465499
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904923019080036847}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300016, guid: fde463d1640be964dad05cce1c744989, type: 3}

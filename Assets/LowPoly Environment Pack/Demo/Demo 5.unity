@@ -399,8 +399,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c9f953a90f890a41bb5f515104bcedb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundTile: {fileID: 729372195752112881, guid: 0490acd9cef5e6c4b9568564b7bff2f2,
-    type: 3}
+  groundTile:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &411707603
 Transform:
   m_ObjectHideFlags: 0
@@ -1418,7 +1420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1565768185
 Transform:
   m_ObjectHideFlags: 0
@@ -1792,7 +1794,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.0555556, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -13829,7 +13831,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!23 &1517655984857045513
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19759,7 +19761,7 @@ MonoBehaviour:
   GameOverUI: {fileID: 5079981279692666794}
   isGrounded: 1
   GameOver: {fileID: 8300000, guid: 2d808ac3d150730409339f56178fdef4, type: 3}
-  stars: {fileID: 7913996818857158339, guid: 7b36e97f32eaa234abe69fab365bf471, type: 3}
+  CoinText: {fileID: 0}
 --- !u!114 &9222012934025557810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19772,6 +19774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b099a516c868bf2428d6264069d5bc04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedModifier: 0
   pauseMenu: {fileID: 5079981279664907640}
   GameOverUI: {fileID: 5079981279692666794}
   jump: 5

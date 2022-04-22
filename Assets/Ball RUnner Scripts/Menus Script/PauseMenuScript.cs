@@ -22,6 +22,12 @@ public class PauseMenuScript : MonoBehaviour
             GameIsPaused = true;
         }
     }
+    public void Restart()
+    {
+        Time.timeScale = 1f;
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
     public void NewGame(string name)
     {
         Time.timeScale = 1f;
@@ -29,7 +35,6 @@ public class PauseMenuScript : MonoBehaviour
     }
     public void QuitGame()
     {
-        Debug.Log("Quitting GAme: ");
         Application.Quit();
     }  
 }

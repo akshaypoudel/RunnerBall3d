@@ -13,9 +13,7 @@ GameObject:
   - component: {fileID: 4465481213412819118}
   - component: {fileID: 4465481213412819117}
   - component: {fileID: 4465481213436077047}
-  - component: {fileID: 4465481213436077044}
   - component: {fileID: 2891952384559340683}
-  - component: {fileID: 2891952384559340678}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -117,30 +115,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementSpeed: 13
   SideScrollSpeed: 11
-  jumpDistance: 6
-  rb: {fileID: 4465481213412819117}
-  playerMaxDownPosition: 0.8
+  jumpHeight: 7
+  donutCount: 0
+  donutText: {fileID: 0}
+  DonutConsumeEffect: {fileID: 0}
+  rigidBody: {fileID: 0}
   Player: {fileID: 4465481213412819112}
   GameOverUI: {fileID: 0}
   isGrounded: 1
   GameOver: {fileID: 8300000, guid: 2d808ac3d150730409339f56178fdef4, type: 3}
-  CoinText: {fileID: 0}
---- !u!114 &4465481213436077044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4465481213412819112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b099a516c868bf2428d6264069d5bc04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedModifier: 0.015
+  controllingSpeedForAndroidTouch: 0
   pauseMenu: {fileID: 0}
-  GameOverUI: {fileID: 0}
-  jump: 5
+  jumpForAndroid: 5
+  minClampX: 0
+  maxClampX: 0
 --- !u!135 &2891952384559340683
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -154,18 +142,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2891952384559340678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4465481213412819112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 084696627f6736e4497b67441fdaf50c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rigidBody: {fileID: 4465481213412819117}
-  jump: 75
-  gravity: -19

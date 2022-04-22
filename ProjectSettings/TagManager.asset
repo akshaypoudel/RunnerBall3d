@@ -10,6 +10,10 @@ TagManager:
   - SpawnTrigger
   - Coin
   - Ground
+  - Tree
+  - Hello
+  - Audio
+  - Diamond
   layers:
   - Default
   - TransparentFX

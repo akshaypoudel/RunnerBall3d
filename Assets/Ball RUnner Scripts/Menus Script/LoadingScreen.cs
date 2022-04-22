@@ -11,7 +11,7 @@ public class LoadingScreen : MonoBehaviour
 
     public void loadLevel()
     {
-        int numbOfCompletedLevels = PlayerPrefs.GetInt("completedlevelcount");
+        int numbOfCompletedLevels = 2;
         StartCoroutine(LoadAsynchronously(numbOfCompletedLevels)); 
     }
 

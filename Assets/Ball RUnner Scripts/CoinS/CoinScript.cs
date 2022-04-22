@@ -1,21 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CoinScript : MonoBehaviour
 {
     [HideInInspector]
     public static int CoinValue;
-    void FixedUpdate()
+    public int rotateSpeed;
+
+
+    void Update()
     {
-        transform.Rotate(90 * Time.deltaTime,0, 0);
+        transform.Rotate(Vector3.up* rotateSpeed * Time.deltaTime);
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.CompareTag("Player"))
-        {
-            CoinValue++;
-            Destroy(gameObject);
-        }
-    } 
+
 }
