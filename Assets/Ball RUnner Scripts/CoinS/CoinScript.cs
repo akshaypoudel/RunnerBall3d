@@ -8,11 +8,18 @@ public class CoinScript : MonoBehaviour
     [HideInInspector]
     public static int CoinValue;
     public int rotateSpeed;
+    public int direction;
 
 
-    void Update()
+    void FixedUpdate()
     {
-        transform.Rotate(Vector3.up* rotateSpeed * Time.deltaTime);
+        if (direction == 0)
+            transform.Rotate(90 * rotateSpeed * Time.deltaTime, 0, 0,Space.World);
+        else if (direction == 1)
+            transform.Rotate(0, 90 * rotateSpeed * Time.deltaTime, 0,Space.World);
+        else if (direction == 2)
+            transform.Rotate(0, 0, 90 * rotateSpeed * Time.deltaTime,Space.World);
+
     }
 
 }
