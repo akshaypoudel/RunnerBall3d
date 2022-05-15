@@ -1,6 +1,4 @@
-using System.Collections;
 using System.IO;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SaveLoadJSONData
@@ -8,7 +6,6 @@ public class SaveLoadJSONData
     private string persistentPath = "";
     public void SaveData(PlayerData playerData, string NameOfJsonFile)
     {
-        //SetDataPath();   
         persistentPath = Application.persistentDataPath + Path.AltDirectorySeparatorChar + NameOfJsonFile;
 
         string savePath = persistentPath;
@@ -20,7 +17,6 @@ public class SaveLoadJSONData
     }
     public void SavePlayerDataNumber(PlayerDataNumber playerData, string NameOfJsonFile)
     {
-        //SetDataPath();   
         persistentPath = Application.persistentDataPath + Path.AltDirectorySeparatorChar + NameOfJsonFile;
 
         string savePath = persistentPath;
@@ -37,7 +33,6 @@ public class SaveLoadJSONData
         using StreamReader reader = new StreamReader(persistentPath);
         string json = reader.ReadToEnd();
         PlayerData data = JsonUtility.FromJson<PlayerData>(json);
-        //Debug.Log(data.ToString());
         return data;
     }
     public PlayerDataNumber LoadPlayerDataNumber(string NameOfJsonFile)

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CarMoving : MonoBehaviour
@@ -22,7 +21,7 @@ public class CarMoving : MonoBehaviour
         {
             transform.Translate(Vector3.forward * Time.deltaTime * speed);
             foreach (var wheel in wheels)
-                wheel.transform.Rotate(90f * Time.deltaTime * tyreMovingSpeed,0,0);
+                wheel.transform.Rotate(90f * Time.deltaTime * tyreMovingSpeed, 0, 0);
             StartCoroutine(destroyObject());
 
         }

@@ -1,27 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine;
 
 
 public class HighScoreScript : MonoBehaviour
 {
-    public GameObject player;
     public TMP_Text Distance;
-    int dist;
-    
-    // Update is called once per frame
-    void Start()
-    {
-        dist = 0;
-    }
+    public float multiplier = 1;
+    [HideInInspector] public float score;
+
+
     void FixedUpdate()
     {
-        if(!MoveLogic.isGameOver)
+        if (!MoveLogic.isGameOver)
         {
-            Distance.text = dist.ToString() + " m";
-            dist++;
+            score += multiplier;
+            Distance.text = score.ToString() + " m";
         }
     }
+
 }

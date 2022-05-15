@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace UnityCipher
 {
@@ -12,7 +12,8 @@ namespace UnityCipher
         /// <para>【argument1】keySize</para>
         /// <para>【return】Public key and private key KeyValuePair</para>
         /// </summary>
-        public static KeyValuePair<string, string> GenrateKeyPair(int keySize){
+        public static KeyValuePair<string, string> GenrateKeyPair(int keySize)
+        {
             RSACryptoServiceProvider rsa = new RSACryptoServiceProvider(keySize);
             string publicKey = rsa.ToXmlString(false);
             string privateKey = rsa.ToXmlString(true);

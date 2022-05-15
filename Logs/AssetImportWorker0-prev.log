@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.6f1 (c0fade0cc7e9) revision 12647134'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home Single Language; OS build 22000.613; Version 2009; 64bit' Language: 'en' Physical Memory: 7886 MB
+OS: 'Windows 10 Home Single Language; OS build 22000.675; Version 2009; 64bit' Language: 'en' Physical Memory: 7886 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ E:/UNITY PROJECTS/Ball Runner/visual Scripting/Ball Runner Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61861
+52546
 Successfully changed project path to: E:/UNITY PROJECTS/Ball Runner/visual Scripting/Ball Runner Game
 E:/UNITY PROJECTS/Ball Runner/visual Scripting/Ball Runner Game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 57.07 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1697.18 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.6f1 (c0fade0cc7e9)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Resources/UnitySubsystems
@@ -30,57 +30,122 @@ Direct3D:
     Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
     Vendor:   Intel
     VRAM:     3943 MB
-    Driver:   30.0.101.1631
+    Driver:   30.0.101.1660
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56860
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56000
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003301 seconds.
+Registered in 0.003409 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 59.39 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 166.15 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.493 seconds
+- Completed reload, in  6.176 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002989 seconds.
+Registered in 0.105299 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.761 seconds
+- Completed reload, in  2.446 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1222 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 171.4 MB.
-System memory in use after: 171.4 MB.
+Unloading 1916 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 199.6 MB.
+System memory in use after: 199.7 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1735.
-Total: 2.430400 ms (FindLiveObjects: 0.153800 ms CreateObjectMapping: 0.027100 ms MarkObjects: 2.063000 ms  DeleteObjects: 0.184800 ms)
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2415.
+Total: 1.804700 ms (FindLiveObjects: 0.148400 ms CreateObjectMapping: 0.045400 ms MarkObjects: 1.444700 ms  DeleteObjects: 0.164700 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/Interactable Objects/BallRunner 1.png
-  artifactKey: Guid(c245df67c1700a141a42a831842125ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Interactable Objects/BallRunner 1.png using Guid(c245df67c1700a141a42a831842125ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a19f8d57b704654b0aa8bdaefbd9043a') in 0.134191 seconds 
+  path: Assets/Images/Extras/Zombie Apocalypse.png
+  artifactKey: Guid(dc1d9f86673853e498f9a751cdb1b7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Extras/Zombie Apocalypse.png using Guid(dc1d9f86673853e498f9a751cdb1b7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85493a6bd9b8cdc6ff1b57aa347bf00a') in 0.104111 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 48.550552 seconds.
-  path: Assets/Scenes/extra/Player.prefab
-  artifactKey: Guid(03d3fe6ef937103478dc49fd32d5ed3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/extra/Player.prefab using Guid(03d3fe6ef937103478dc49fd32d5ed3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78f8fedeeb880d5707adb4f691ed6a4e') in 0.083857 seconds 
+  Time since last request: 216.876517 seconds.
+  path: Assets/Advanced Assets/ARPG Effects/Textures/dot4 1.png
+  artifactKey: Guid(3adec8c720b475340b79089513b92165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Advanced Assets/ARPG Effects/Textures/dot4 1.png using Guid(3adec8c720b475340b79089513b92165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03f003c3f74ff3a570830e8954496e88') in 0.014750 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.104018 seconds.
-  path: Assets/Scenes/OpenMountainsMap.unity
-  artifactKey: Guid(e51af1161ac8bd14cae74802dfc15ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/OpenMountainsMap.unity using Guid(e51af1161ac8bd14cae74802dfc15ff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8962bd68c67595ac512faef148be75d4') in 0.010974 seconds 
+  Time since last request: 5.662076 seconds.
+  path: Assets/Advanced Assets/ARPG Effects/Textures/dot4 1.png
+  artifactKey: Guid(3adec8c720b475340b79089513b92165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Advanced Assets/ARPG Effects/Textures/dot4 1.png using Guid(3adec8c720b475340b79089513b92165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50faf8c4b24ee6bb878bff08b0d918cd') in 0.016597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.429764 seconds.
+  path: Assets/Advanced Assets/ARPG Effects/Textures/dot4 1.png
+  artifactKey: Guid(3adec8c720b475340b79089513b92165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Advanced Assets/ARPG Effects/Textures/dot4 1.png using Guid(3adec8c720b475340b79089513b92165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '883957a3c32f654bcfc4d87f7c9adfb5') in 0.017129 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001774 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.628 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1892 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 202.1 MB.
+System memory in use after: 202.2 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2484.
+Total: 1.900400 ms (FindLiveObjects: 0.136700 ms CreateObjectMapping: 0.034500 ms MarkObjects: 1.708100 ms  DeleteObjects: 0.020000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 119.356888 seconds.
+  path: Assets/Advanced Assets/ARPG Effects/Textures/treasure_ray 1.png
+  artifactKey: Guid(5aa833521a076a44fbac855f24e79cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Advanced Assets/ARPG Effects/Textures/treasure_ray 1.png using Guid(5aa833521a076a44fbac855f24e79cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7319fc294616beaa6694c4da6ac82c6') in 0.034510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.821703 seconds.
+  path: Assets/Advanced Assets/ARPG Effects/Textures/treasure_ray 1.png
+  artifactKey: Guid(5aa833521a076a44fbac855f24e79cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Advanced Assets/ARPG Effects/Textures/treasure_ray 1.png using Guid(5aa833521a076a44fbac855f24e79cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9576566b01d169c19a4b93a2a3d7a3b5') in 0.034813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.303623 seconds.
+  path: Assets/Advanced Assets/ARPG Effects/Textures/shield 1.png
+  artifactKey: Guid(63e564c7a0055d84bbb9db110c0d54c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Advanced Assets/ARPG Effects/Textures/shield 1.png using Guid(63e564c7a0055d84bbb9db110c0d54c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ba5a03d12f11bd7a4fa766126a56333') in 0.017968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.360927 seconds.
+  path: Assets/Advanced Assets/ARPG Effects/Textures/shield 1.png
+  artifactKey: Guid(63e564c7a0055d84bbb9db110c0d54c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Advanced Assets/ARPG Effects/Textures/shield 1.png using Guid(63e564c7a0055d84bbb9db110c0d54c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09202c2489a1b49edee4635b860c6f2') in 0.017803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 75.668791 seconds.
+  path: Assets/Advanced Assets/ARPG Effects/Textures/shield 1.png
+  artifactKey: Guid(63e564c7a0055d84bbb9db110c0d54c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Advanced Assets/ARPG Effects/Textures/shield 1.png using Guid(63e564c7a0055d84bbb9db110c0d54c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb80ca6b4149726fbace1ad453b49d6') in 0.014453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.233821 seconds.
+  path: Assets/Advanced Assets/ARPG Effects/Textures/treasure_ray 1.png
+  artifactKey: Guid(5aa833521a076a44fbac855f24e79cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Advanced Assets/ARPG Effects/Textures/treasure_ray 1.png using Guid(5aa833521a076a44fbac855f24e79cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8548e47d53f96bb1c0488f213f9281d') in 0.018267 seconds 

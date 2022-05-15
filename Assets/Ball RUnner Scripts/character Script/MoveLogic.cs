@@ -1,59 +1,81 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+using System;
 using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MoveLogic : MonoBehaviour
 {
-    [Header("KeyboardMovingParameters")]
+    [Header("---------KeyboardMovingParameters--------\n")]
     public float playerMovementSpeed = 15f;
-    
-    public static int numberOfDonuts;
-    public static int numberOfDiamonds;
-    private int whichSkin;
-
     public float SideScrollSpeed = 7f;
     public float jumpHeight = 7f;
     private float Hmovement;
 
+
+
+    [Header("---------Scriptable Objects--------\n")]
+    public BallSkinMaterialSO ballSkinsMaterialSO;
+
+
+    [Header("---------Basic Data Type---------\n")]
+
+    public float playerInvincibleTime;
+    [Range(0, 1)] public static int tempControlsValue; //if this is 1 than touch controls will activate
+                                                       //and if its 2 then gyro controls will activate.
+    private int whichSkin;
     [HideInInspector] public int temporaryDonutCount;
-    [HideInInspector] public int temporaryDiamondCount;
 
-    public TMP_Text donutText;
-    public TMP_Text diamondText;
+    public int playAgainTimerStartTime;
+    private float currentTime;
 
-    public ParticleSystem DonutConsumeEffect;
-    public ParticleSystem DiamondConsumeEffect;
-
-    public Rigidbody rigidBody;
-    public GameObject Player, GameOverUI;
-    public GameObject pauseMenu;
-    public GameObject PlayerSphere;
-    public Material[] skinsMaterial;
-
-
+    public static int numberOfDonuts;
+    public static int numberOfDiamonds;
     public bool isGrounded = true;
     private bool canBallMove = true;
     public static bool isGameOver = false;
-    public Button jumpButton;
     public float max_Y_PositionForGameOver;
+    [HideInInspector] public int temporaryDiamondCount;
 
-    private string Prefscontrols = "PrefsControls";
-    private string indexOfMat = "indexOfMaterial1";
+
+    [Header("---------GameObjects---------\n")]
+    public GameObject Stars;
+    public GameObject Player, GameOverUI;
+    public GameObject pauseMenu;
+    public GameObject PlayerSphere;
+    public Rigidbody rigidBody;
+    public Button jumpButton;
+    public GameObject PlayAgainTimerPanel;
+    public GameObject duplicatePlayerCollider;
+
+    [Header("---------TextMeshPro---------\n")]
+    public TMP_Text donutText;
+    public TMP_Text diamondText;
+    public TMP_Text TimerText;
+
+    [Header("---------Scripts---------\n")]
+    public BGDisable bGDisable;
+    public Timer timer;
+    public RotateGameObject playerRotation;
+    [SerializeField]private InterstialAds interstialAds;
+    PlayerPrefsSaveSystem playerPrefsSaveSystem = new PlayerPrefsSaveSystem();
+
+
+    [Header("---------Particle System---------\n")]
+
+    public ParticleSystem DonutConsumeEffect;
+    public ParticleSystem DiamondConsumeEffect;
+    public ParticleSystem PlayAgainEffect;
+
+    [Header("---------Strings---------\n")]
 
     public string encryptedDonutPrefs = "EncryptedDonut";
     public string encryptedDiamondPrefs = "EncryptedDiamond";
+    private string Prefscontrols = "PrefsControls";
+    private string indexOfMat = "indexOfMaterial1";
 
-    [HideInInspector]public int tempControlsValue; //if this is 1 than touch controls will activate
-    //and if its 2 then gyro controls will activate.
-   
-    
-    PlayerPrefsSaveSystem playerPrefsSaveSystem = new PlayerPrefsSaveSystem();
-    
-
-    [Header("TouchMoveParameters")]
+    [Header("---------Touch Move Parameters---------\n")]
     public float controllingSpeedForAndroidTouch;
     private Touch touch;
     public float minClampX;
@@ -63,11 +85,12 @@ public class MoveLogic : MonoBehaviour
     {
         isGameOver = false;
         whichSkin = PlayerPrefs.GetInt(indexOfMat);
-        PlayerSphere.GetComponent<Renderer>().material=skinsMaterial[whichSkin];
+        PlayerSphere.GetComponent<Renderer>().material = ballSkinsMaterialSO.materialOfObject[whichSkin];
         jumpButton.onClick.AddListener(Jump);
 
+        currentTime = playAgainTimerStartTime * 1;
 
-        if(PlayerPrefs.HasKey(Prefscontrols))
+        if (PlayerPrefs.HasKey(Prefscontrols))
             tempControlsValue = PlayerPrefs.GetInt(Prefscontrols);
         else
             tempControlsValue = 0;
@@ -75,19 +98,36 @@ public class MoveLogic : MonoBehaviour
     }
 
 
+    private void Update()
+    {
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.Space))
+            Jump();
+#endif
+
+        if (transform.position.y < max_Y_PositionForGameOver)
+            Gameover();
+    }
+
     //FixedUpdate Function run once per frame
     private void FixedUpdate()
     {
         if (canBallMove)
-        { 
-            if(tempControlsValue==0)
+        {
+#if UNITY_EDITOR
+            playerMovementSpeed = 8f;
+            KeyboardControls();
+#endif
+#if UNITY_ANDROID
+
+            if (tempControlsValue == 0)
                 TouchControls();
-            if(tempControlsValue==1)
+            if (tempControlsValue == 1)
                 TiltControls();
+#endif
         }
-        
-        if (transform.position.y < max_Y_PositionForGameOver)
-            Gameover();
+
+
     }
     public void Jump()
     {
@@ -102,17 +142,17 @@ public class MoveLogic : MonoBehaviour
     {
         Hmovement = Input.GetAxis("Horizontal") * SideScrollSpeed;
 
-        transform.Translate(new Vector3(Hmovement, 0, playerMovementSpeed) * Time.deltaTime);
+        transform.Translate(new Vector3(Hmovement, 0, playerMovementSpeed) *Time.deltaTime);
 
         transform.position = new Vector3(
-            Mathf.Clamp(transform.position.x,minClampX, maxClampX),
+            Mathf.Clamp(transform.position.x, minClampX, maxClampX),
                         transform.position.y,
                         transform.position.z);
     }
     private void TiltControls()
     {
         transform.Translate(new Vector3(Input.acceleration.x * SideScrollSpeed, 0, playerMovementSpeed) * Time.deltaTime);
-        
+
         transform.position = new Vector3(
            Mathf.Clamp(transform.position.x, minClampX, maxClampX),
                         transform.position.y,
@@ -159,28 +199,39 @@ public class MoveLogic : MonoBehaviour
         SoundManager.PlaySound(SoundManager.Sound.GameOver);
         isGameOver = true;
         canBallMove = false;
+        this.gameObject.tag = "Finish";
         this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-        GameOverUI.SetActive(true);
+        playerRotation.canRotate = false;
         SaveDonut();
         SaveDiamond();
+        Invoke("SetGameOverPanelActive", 1.5f);
+    }
+
+    private void SetGameOverPanelActive()
+    {
+        Stars.SetActive(true);
+
+        timer.DiamondPlayAgainTXT.text = timer.diamondsValueForPlayAgain.ToString();
+        timer.Refresh();
+        bGDisable.DisableAllBgComponents();
+        GameOverUI.SetActive(true);
     }
 
     public void SaveDonut()
     {
         int tempDonut = numberOfDonuts;
-        numberOfDonuts = 0;
-        playerPrefsSaveSystem.EncryptPrefsPositive(tempDonut,encryptedDonutPrefs);
+        playerPrefsSaveSystem.EncryptPrefsPositive(tempDonut, encryptedDonutPrefs);
     }
     private void SaveDiamond()
     {
         int tempDiamond = numberOfDiamonds;
-        numberOfDiamonds = 0;
-        playerPrefsSaveSystem.EncryptPrefsPositive(tempDiamond,encryptedDiamondPrefs);
+        playerPrefsSaveSystem.EncryptPrefsPositive(tempDiamond, encryptedDiamondPrefs);
     }
 
     private void OnTriggerEnter(Collider target)
     {
-        if (target.gameObject.CompareTag("Coin"))
+        if (target.gameObject.CompareTag("Coin") && (this.gameObject.tag == "Player" 
+                                                      || this.gameObject.tag =="Finish"))
         {
             SoundManager.PlaySound(SoundManager.Sound.DonutCollect);
             temporaryDonutCount++;
@@ -193,46 +244,67 @@ public class MoveLogic : MonoBehaviour
             DonutConsumeEffect.Play();
             Destroy(target.gameObject);
         }
-        if(target.gameObject.CompareTag("Diamond"))
+        if (target.gameObject.CompareTag("Diamond") && (this.gameObject.tag == "Player"
+                                                      || this.gameObject.tag == "Finish"))
         {
             SoundManager.PlaySound(SoundManager.Sound.DiamondCollect);
             temporaryDiamondCount++;
             numberOfDiamonds++;
             diamondText.text = temporaryDiamondCount.ToString();
 
-            if(DiamondConsumeEffect.isPlaying)
+            if (DiamondConsumeEffect.isPlaying)
                 DiamondConsumeEffect.Stop();
 
             DiamondConsumeEffect.Play();
-            Destroy (target.gameObject);
+            Destroy(target.gameObject);
 
         }
     }
-
     public void Continue()
     {
         SceneManager.LoadScene(1);
     }
-    public void PlayAgain()
+    private void PauseTheTimer()
+    {
+        Time.timeScale = 0f;
+    }
+    private void ResumeTime()
     {
         Time.timeScale = 1f;
-        numberOfDonuts = 0; //by setting numberOfDonuts = 0, we are resetting the value of coin
-        //after we hit play again button
-        this.gameObject.tag = "Hello";
-        canBallMove = true;
-        GameOverUI.SetActive(false);
-        this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-        this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
-        canBallMove = true;
-        StartCoroutine(Invincible());
-
+        PlayAgainEffect.Play();
     }
-    IEnumerator Invincible()
+    public void PlayAgain()
     {
-        yield return new WaitForSeconds(10f);
+        ResumeTime();
+        StartCoroutine(DestroyNearbyObjects());
+        EnableBGComponentAndDeactivateStars();
+        ResumePlayerMovement();
+    }
+
+    private void EnableBGComponentAndDeactivateStars()
+    {
+        Stars.SetActive(false);
+        bGDisable.EnableAllBgComponents();
+    }
+
+    IEnumerator DestroyNearbyObjects()
+    {
+        duplicatePlayerCollider.transform.position=transform.position;
+        duplicatePlayerCollider.GetComponent<SphereCollider>().enabled = true;
+        yield return new WaitForSeconds(1f);
+        duplicatePlayerCollider.GetComponent<SphereCollider>().enabled = false;
+        yield return new WaitForSeconds(0.5f);
         this.gameObject.tag = "Player";
 
     }
 
-
+    private void ResumePlayerMovement()
+    {
+        isGameOver = false;
+        GameOverUI.SetActive(false);
+        this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+        playerRotation.canRotate = true;
+        canBallMove = true;
+    }
 }

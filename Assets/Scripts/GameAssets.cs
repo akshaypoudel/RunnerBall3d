@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using System;
 using TMPro;
+using UnityEngine;
 
 public class GameAssets : MonoBehaviour
 {
@@ -10,7 +8,7 @@ public class GameAssets : MonoBehaviour
     public TMP_Text DonutText;
     public TMP_Text DiamondText;
     public SoundAudioClip[] soundAudioClipArray;
-    PlayerPrefsSaveSystem playerPrefsSaveSystem=new PlayerPrefsSaveSystem();
+    PlayerPrefsSaveSystem playerPrefsSaveSystem = new PlayerPrefsSaveSystem();
     public bool isMenuScene = true;
 
 
@@ -24,12 +22,12 @@ public class GameAssets : MonoBehaviour
 
     private void Start()
     {
-        if(isMenuScene)
+        if (isMenuScene)
         {
-            playerPrefsSaveSystem.DecryptPrefs(DonutText,encryptedDonutPrefs);
-            playerPrefsSaveSystem.DecryptPrefs(DiamondText,encryptedDiamondPrefs);
+            playerPrefsSaveSystem.DecryptPrefs(DonutText, encryptedDonutPrefs);
+            playerPrefsSaveSystem.DecryptPrefs(DiamondText, encryptedDiamondPrefs);
         }
-       
+
     }
 
 

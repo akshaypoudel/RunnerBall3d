@@ -1,11 +1,8 @@
 using System.Collections;
-using System;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Audio;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class SettingsMenu : MonoBehaviour
@@ -22,12 +19,13 @@ public class SettingsMenu : MonoBehaviour
     private GameObject BGAudioGameObject;
 
 
-    public static string qualitySettingsPrefs = "qualitySettings" ;
-    public static string FirstTimePlayingPrefs = "Controls" ;
-    public static string nameOfScenePrefs = "nameOfScene" ;
-    public static string whichControls = "PrefsControls" ;
-    public static string bgAudioPref = "BackGroundAudio" ;
-    public static string sfxAudioPref = "SFXAudio" ;
+
+    public static string qualitySettingsPrefs = "qualitySettings";
+    public static string FirstTimePlayingPrefs = "Controls";
+    public static string nameOfScenePrefs = "nameOfScene";
+    public static string whichControls = "PrefsControls";
+    public static string bgAudioPref = "BackGroundAudio";
+    public static string sfxAudioPref = "SFXAudio";
 
 
     public Slider MusicSlider;
@@ -51,14 +49,14 @@ public class SettingsMenu : MonoBehaviour
         }
         CheckAndLoadSettings();
     }
-    
+
 
 
     private void Start()
     {
-            if (!isGameScene)
-                donutText.text = MoveLogic.numberOfDonuts.ToString();
-            CheckAndLoadSettings();
+        if (!isGameScene)
+            donutText.text = MoveLogic.numberOfDonuts.ToString();
+        CheckAndLoadSettings();
 
     }
     private void CheckAndLoadSettings()
@@ -68,6 +66,7 @@ public class SettingsMenu : MonoBehaviour
         CheckSFXAudioAndLoad();
         CheckQualitySettingsAndLoad();
     }
+
     #region QualitySettings
     private void CheckQualitySettingsAndLoad()
     {
@@ -103,17 +102,20 @@ public class SettingsMenu : MonoBehaviour
         if (PlayerPrefs.HasKey(FirstTimePlayingPrefs))
         {
             if (PlayerPrefs.GetInt(whichControls) == 0)
+            {
                 touchControlSelectedButton.SetActive(true);
+            }
             else if (PlayerPrefs.GetInt(whichControls) == 1)
+            {
                 gyroControlSelectedButton.SetActive(true);
+            }
         }
     }
     public void CheckControlsAndLoadLevel(int SceneIndex)
     {
-        if(PlayerPrefs.HasKey(FirstTimePlayingPrefs))
+        if (PlayerPrefs.HasKey(FirstTimePlayingPrefs))
         {
             loadingScreen.SetActive(true);
-
             StartCoroutine(LoadAsynchronously(SceneIndex));
         }
         else
@@ -153,13 +155,13 @@ public class SettingsMenu : MonoBehaviour
     {
         PlayerPrefs.SetInt(whichControls, 0);
         if (isGameScene)
-            moveLogic.tempControlsValue = PlayerPrefs.GetInt(whichControls);
+            MoveLogic.tempControlsValue = PlayerPrefs.GetInt(whichControls);
     }
     public void SaveGyroControls()
     {
         PlayerPrefs.SetInt(whichControls, 1);
         if (isGameScene)
-            moveLogic.tempControlsValue = PlayerPrefs.GetInt(whichControls);
+            MoveLogic.tempControlsValue = PlayerPrefs.GetInt(whichControls);
     }
 
 
@@ -252,7 +254,6 @@ public class SettingsMenu : MonoBehaviour
     }
 
     #endregion
-
 
 
     public void OpenUrl(string url)

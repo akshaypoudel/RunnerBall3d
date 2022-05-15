@@ -1,16 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
 using UnityCipher;
+using UnityEngine;
 
 [System.Serializable]
 public class PlayerPrefsSaveSystem
 {
     private string password = "((%##@&&)*";
-    
 
-    public void EncryptPrefsPositive(int score,string encryptedPrefs)
+
+    public void EncryptPrefsPositive(int score, string encryptedPrefs)
     {
         int Score = score;
         int temp;
@@ -32,9 +30,9 @@ public class PlayerPrefsSaveSystem
         }
     }
 
-   
 
-    public void DecryptPrefs(TMP_Text fruitsCount,string Eprefs)
+
+    public void DecryptPrefs(TMP_Text fruitsCount, string Eprefs)
     {
         if (PlayerPrefs.HasKey(Eprefs))
         {
@@ -60,10 +58,13 @@ public class PlayerPrefsSaveSystem
             return 0;
         }
     }
-    public void EncryptPrefsNegative(int Score,string Eprefs)
+    public void EncryptPrefsNegative(int Score, string Eprefs)
     {
         int tempVar;
-        tempVar = Score;
+        if (Score < 0)
+            tempVar = 0;
+        else
+            tempVar = Score;
         if (PlayerPrefs.HasKey(Eprefs))
         {
             int a = int.Parse(RijndaelEncryption.Decrypt(PlayerPrefs.GetString(Eprefs), password));
@@ -82,7 +83,7 @@ public class PlayerPrefsSaveSystem
         }
 
     }
-    
-        
+
+
 }
 

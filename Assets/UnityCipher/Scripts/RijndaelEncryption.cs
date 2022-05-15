@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Security.Cryptography;
+using System.Text;
 
-namespace UnityCipher{
+namespace UnityCipher
+{
     public class RijndaelEncryption
     {
         private static int BufferKeySize = 32;

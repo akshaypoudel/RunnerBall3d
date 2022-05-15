@@ -1,6 +1,5 @@
-using UnityEngine;
-using UnityEditor.SceneManagement;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 
 [InitializeOnLoad]
 public class AutoSave

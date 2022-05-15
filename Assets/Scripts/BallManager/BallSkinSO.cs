@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,4 +11,5 @@ public class BallSkinSO : ScriptableObject
     public Material materialOfObject;
     public int baseCost;
 }
+
 
