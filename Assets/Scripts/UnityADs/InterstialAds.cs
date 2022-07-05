@@ -4,8 +4,8 @@ using UnityEngine.Advertisements;
 public class InterstialAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
 {
     [SerializeField] string _androidAdUnitId = "Interstitial_Android";
-    [SerializeField] string _iOsAdUnitId = "Interstitial_iOS";
     string _adUnitId;
+    
 
     public void InitializeInterstitial()
     {
@@ -22,10 +22,9 @@ public class InterstialAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShow
         Advertisement.Show(_adUnitId, this);
     }
 
-    // Implement Load Listener and Show Listener interface methods: 
     public void OnUnityAdsAdLoaded(string adUnitId)
     {
-        // Optionally execute code if the Ad Unit successfully loads content.
+
     }
 
     public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)

@@ -13,8 +13,13 @@ public class MoveBarrel : MonoBehaviour
         if (canDestroy)
         {
             canDestroy = false;
-            Destroy(this.gameObject, 10);
+            Invoke("DestroyObject", 10);
+
         }
     }
 
+    private void DestroyObject()
+    {
+        this.gameObject.SetActive(false);
+    }
 }

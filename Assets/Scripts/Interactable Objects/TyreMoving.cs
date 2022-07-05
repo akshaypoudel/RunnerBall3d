@@ -21,13 +21,13 @@ public class TyreMoving : MonoBehaviour
         {
             transform.Rotate(0, 0, -90 * Time.deltaTime * tyreRotateSpeed);
             transform.Translate(Vector3.back * Time.deltaTime * tyreMoveSpeed, Space.World);
-            StartCoroutine(destroyObject());
+            Invoke("DestroyObject", 10);
+
         }
     }
-    IEnumerator destroyObject()
+    private void DestroyObject()
     {
-        yield return new WaitForSeconds(8);
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
     }
 }
 

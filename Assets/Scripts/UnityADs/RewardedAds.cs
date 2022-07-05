@@ -1,13 +1,26 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Advertisements;
+using TMPro;
  
 public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
 {
-    [SerializeField] Button _showAdButton;
-    [SerializeField] GameObject showAdButton;
-    [SerializeField] string _androidAdUnitId = "Rewarded_Android";
+    public Button _showAdButton;
+    
+    public GameObject showAdButton;
+    private string _androidAdUnitId = "Rewarded_Android";
+    private string encryptedPrefs = "EncryptedDonut";
     [SerializeField] private bool isMenuScene = false;
+    private bool isAdsLoaded = false;
+
+    public TMP_Text donutText;
+
+    public GameObject donutRewardUI;
+    public BGDisable bGDisable;
+
+    private bool isRewarded = false;
+    private int rewardDonutAmountAfterWatchingADs = 100;
+    PlayerPrefsSaveSystem playerPrefsSaveSystem = new PlayerPrefsSaveSystem();
 
 
     [SerializeField] MoveLogic _moveLogic;
@@ -17,10 +30,16 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     {
         _adUnitId = _androidAdUnitId;
 
-        if(!isMenuScene)
-            _showAdButton.interactable = true;
+        CheckAndActivateShowAdButtons(true,true);
+    }
+
+    public void CheckAndActivateShowAdButtons(bool showAdButtonInGameScene,bool showAdButtonInMenuScene)
+    {
+
+        if (!isMenuScene)
+            _showAdButton.interactable = showAdButtonInGameScene;
         else
-            showAdButton.SetActive(true);
+            showAdButton.SetActive(showAdButtonInMenuScene);
     }
 
     // Load content to the Ad Unit:
@@ -34,24 +53,32 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     {
         if (adUnitId.Equals(_adUnitId))
         {
+            isAdsLoaded = true;
             _showAdButton.onClick.AddListener(ShowAd);
-            if (!isMenuScene)
-                _showAdButton.interactable = true;
-            else
-                showAdButton.SetActive(true);
+            CheckAndActivateShowAdButtons(true, true);
+        }
+        else
+        {
+            isAdsLoaded = false;
         }
     }
 
     // Implement a method to execute when the user clicks the button:
     public void ShowAd()
     {
-        if(!isMenuScene)
-            _showAdButton.interactable=false;
+        if(isAdsLoaded)
+        {
+            CheckAndActivateShowAdButtons(false, false);
+            isRewarded = false ;
+            Time.timeScale = 0f;
+            Advertisement.Show(_adUnitId, this);
+        }
         else
-            showAdButton.SetActive(false);
-
-        Time.timeScale = 0f;
-        Advertisement.Show(_adUnitId, this);
+        {
+            Time.timeScale = 1f;
+            CheckAndActivateShowAdButtons(false, false);
+            LoadAd();
+        }
     }
 
     // Implement the Show Listener's OnUnityAdsShowComplete callback method to determine if the user gets a reward:
@@ -60,38 +87,49 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
         if (adUnitId.Equals(_adUnitId) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
         {
             Time.timeScale = 1f;
-            //PlayerReward
-            if (isMenuScene)
-                GivePlayerDonutReward();
-            else
-                _moveLogic.PlayAgain();
 
-            Advertisement.Load(_adUnitId, this);
+            if(!isRewarded)
+            {
+                isRewarded = true;  
+                if (isMenuScene)
+                {
+                    GivePlayerDonutReward();
+                }
+                else
+                {
+                   _moveLogic.StartTimerForNewLife();
+                }
+
+            }
+            LoadAd();
         }
     }
     public void GivePlayerDonutReward()
     {
+        int a = playerPrefsSaveSystem.ReturnDecryptedScore(encryptedPrefs);
+        int reward = a + rewardDonutAmountAfterWatchingADs;
 
+        bGDisable.DisableAllBgComponents();
+
+        donutRewardUI.SetActive(true);
+
+        donutText.text = reward.ToString();       
+
+        playerPrefsSaveSystem.EncryptPrefsPositive(rewardDonutAmountAfterWatchingADs, encryptedPrefs);
     }
 
-    // Implement Load and Show Listener error callbacks:
     public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)
     {
-        Debug.Log("Failed To Load Ads: ");
-        if (!isMenuScene)
-            _showAdButton.interactable = false;
-        else
-            showAdButton.SetActive(false);
+        Time.timeScale = 1f;
+        LoadAd();
+        CheckAndActivateShowAdButtons(false, false);
     }
 
     public void OnUnityAdsShowFailure(string adUnitId, UnityAdsShowError error, string message)
     {
-        Debug.Log($"Error showing Ad Unit {adUnitId}: {error.ToString()} - {message}");
-        // Use the error details to determine whether to try to load another ad.
-        if (!isMenuScene)
-            _showAdButton.interactable = false;
-        else
-            showAdButton.SetActive(false);
+        Time.timeScale = 1f;
+        CheckAndActivateShowAdButtons(false, false);
+        LoadAd();
     }
 
     public void OnUnityAdsShowStart(string adUnitId) { }

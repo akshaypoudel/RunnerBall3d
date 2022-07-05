@@ -18,14 +18,14 @@ public class GateOpener : MonoBehaviour
             if (transform.rotation.y <= 0f && transform.rotation.y >= -90f)
             {
                 transform.Rotate(0, -90f * Time.deltaTime * speed, 0);
-                StartCoroutine(destroy());
+                Invoke("DestroyObject", 10);
+
             }
 
         }
     }
-    IEnumerator destroy()
+    private void DestroyObject()
     {
-        yield return new WaitForSeconds(6);
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
     }
 }

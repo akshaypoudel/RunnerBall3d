@@ -23,13 +23,17 @@ public class LogFalling : MonoBehaviour
             canFallAgain = false;
             _rigidBody.useGravity = true;
             _rigidBody.constraints = RigidbodyConstraints.None;
-            StartCoroutine(destroyObject());
-        }
+            _rigidBody.constraints = RigidbodyConstraints.FreezeRotationZ;
 
+            Invoke("DestroyObject", 15);
+        }
     }
-    IEnumerator destroyObject()
+
+
+
+
+    private void DestroyObject()
     {
-        yield return new WaitForSeconds(7);
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
     }
 }

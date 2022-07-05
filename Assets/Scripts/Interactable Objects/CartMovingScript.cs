@@ -22,14 +22,14 @@ public class CartMovingScript : MonoBehaviour
             transform.Translate(Vector3.left * Time.deltaTime * speed);
             foreach (var wheel in wheels)
                 wheel.transform.Rotate(0, 0, 90f * Time.deltaTime * tyreMovingSpeed);
-            StartCoroutine(destroyObject());
+            Invoke("DestroyObject", 8);
+
 
         }
     }
 
-    IEnumerator destroyObject()
+    private void DestroyObject()
     {
-        yield return new WaitForSeconds(8);
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
     }
 }

@@ -19,7 +19,7 @@ public class BallSkinManager : MonoBehaviour
     private List<GameObject> SelectedButtons;
     private List<GameObject> FruitIcon;
 
-    public int buttonIndexInStageTemplateGameObject;
+    private int buttonIndexInStageTemplateGameObject;
 
     [SerializeField] private string passwordforsavefile;
     PlayerPrefsSaveSystem saveSystem = new PlayerPrefsSaveSystem();
@@ -49,7 +49,7 @@ public class BallSkinManager : MonoBehaviour
         LoadPanel();
         CheckPurchasable();
         ActivateSelectedButtons();
-        DoesFileExists();
+        CheckIfFileExists();
 
     }
 
@@ -61,7 +61,7 @@ public class BallSkinManager : MonoBehaviour
             PlayerPrefs.SetInt(indexOfMat, 0);
     }
 
-    private void DoesFileExists()
+    private void CheckIfFileExists()
     {
         if (File.Exists(persistantDataPath + jsonFileName))
         {
@@ -137,7 +137,6 @@ public class BallSkinManager : MonoBehaviour
             saveSystem.EncryptPrefsNegative(tempCoin, encryptedDonutPrefs);
             CheckPurchasable();
             Select(buttonNumber);
-
         }
     }
     private void SetSelectedButtonActive()
