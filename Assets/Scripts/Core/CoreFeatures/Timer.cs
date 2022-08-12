@@ -125,7 +125,6 @@ public class Timer : MonoBehaviour
         {
             ReduceTheDiamond(diamondsValueForPlayAgain);
             diamondsValueForPlayAgain *= 2;
-            //moveLogic.PlayAgain();
             moveLogic.StartTimerForNewLife();
         }
         else
