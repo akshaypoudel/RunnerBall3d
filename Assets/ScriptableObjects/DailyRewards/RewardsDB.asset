@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rewards:
   - type: 0
-    amount: 1000
+    amount: 2500
   - type: 1
-    amount: 20
+    amount: 100
   - type: 0
-    amount: 1200
+    amount: 2000
   - type: 1
-    amount: 15
+    amount: 100
   - type: 0
-    amount: 800
+    amount: 3000
   - type: 1
-    amount: 20
+    amount: 50

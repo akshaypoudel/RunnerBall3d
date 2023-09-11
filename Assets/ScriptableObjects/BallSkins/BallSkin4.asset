@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3a4d64f4a598040a1c08790eca8050, type: 3}
   m_Name: BallSkin4
   m_EditorClassIdentifier: 
-  Price: 18000
+  Price: 8000
   NameOfSkin: Crystal Ball
   materialOfObject: {fileID: 0}
-  baseCost: 18000
+  baseCost: 8000

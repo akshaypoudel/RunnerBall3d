@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class GroundTile2 : MonoBehaviour
@@ -6,7 +7,6 @@ public class GroundTile2 : MonoBehaviour
 
     private void Start()
     {
-        //groundSpawner2 = GameObject.FindObjectOfType<GroundSpawner2>();
         groundSpawner2 = GameObject.Find("GroundManager").GetComponent<GroundSpawner2>();
     }
 
@@ -14,9 +14,15 @@ public class GroundTile2 : MonoBehaviour
     {
         if(other.gameObject.transform.CompareTag("Player"))
         {
-            //if (groundSpawner2 != null)
             groundSpawner2.SpawnTile();
-            Destroy(gameObject,3f);
+            StartCoroutine(DestroyGround(gameObject));
         }
+    }
+    IEnumerator DestroyGround(GameObject ground)
+    {
+        yield return new WaitForSeconds(3f);
+        ground.SetActive(false);
+        yield return new WaitForSeconds(60f);
+        Destroy(ground);
     }
 }

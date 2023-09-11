@@ -92,10 +92,9 @@ public class Timer : MonoBehaviour
         MoveLogic.numberOfDonuts = 0;
         MoveLogic.numberOfDiamonds = 0;
     }
-
     private void HighScoreLogic()
     {
-        currentScore = (int)highScoreScript.score;
+        currentScore = (int)highScoreScript.GetCurrentScore();
         if (!PlayerPrefs.HasKey(highScorePrefs))
         {
             PlayerPrefs.SetInt(highScorePrefs, highScore);

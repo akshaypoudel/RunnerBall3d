@@ -151,6 +151,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: 0.07990098, y: 1.255, z: 51.817627}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 868847543}
   - {fileID: 289870828}
@@ -683,13 +684,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 1.123}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1132924920}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &47865604
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -702,10 +704,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &47865605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,8 +751,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &47865608
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -828,6 +830,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.971878, y: -0.0018463135, z: 0.2844391}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 13
@@ -928,13 +931,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 1.123}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 544165719}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &49245125
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -947,10 +951,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &49245126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,8 +998,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &49245129
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1084,6 +1088,7 @@ Transform:
   m_LocalRotation: {x: -0.69807535, y: 0, z: -0, w: 0.71602434}
   m_LocalPosition: {x: -0.57, y: 2.03, z: 4.1}
   m_LocalScale: {x: 144.73465, y: 1959.7758, z: 152.37173}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2125767498}
   m_RootOrder: 2
@@ -1166,6 +1171,7 @@ Transform:
   m_LocalRotation: {x: -0.7070936, y: -0.004319442, z: 0.004319442, w: 0.7070936}
   m_LocalPosition: {x: -0.55, y: 1.99, z: 2.75}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1858681174}
   m_RootOrder: 0
@@ -1249,6 +1255,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.582304, y: -0.0018463135, z: 1.6615753}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 0
@@ -1349,13 +1356,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 3.368}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1380422123}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &114925642
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1368,10 +1376,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &114925643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1413,8 +1423,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &114925646
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1494,6 +1502,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: -29.086721, y: 117.3245, z: -11.426582}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1002351508}
   m_RootOrder: 9
@@ -1591,6 +1600,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.228321, y: -0.0018463135, z: 0.5042877}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 22
@@ -1691,13 +1701,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 0}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1277620961}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &153819622
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1710,10 +1721,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &153819623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1755,8 +1768,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &153819626
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1837,6 +1848,7 @@ Transform:
   m_LocalRotation: {x: 0.005853806, y: -0.97467524, z: 0.025692962, w: 0.22206701}
   m_LocalPosition: {x: -34.58, y: 118.2695, z: -159.25}
   m_LocalScale: {x: 461.08444, y: 461.08447, z: 461.0844}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1002351508}
   m_RootOrder: 5
@@ -1952,13 +1964,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 5.592}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 544165719}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &232854266
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1971,10 +1984,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &232854267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2016,8 +2031,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &232854270
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2116,13 +2129,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 2.247}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1743742616}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &250787735
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2135,10 +2149,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &250787736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2180,8 +2196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &250787739
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2260,6 +2274,7 @@ Transform:
   m_LocalRotation: {x: -0.25687322, y: -0.012857761, z: 0.0034339847, w: 0.96635354}
   m_LocalPosition: {x: -13959.058, y: 247149.67, z: 433981.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 265667271}
   m_RootOrder: 0
@@ -2349,6 +2364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -2381,6 +2397,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -555.5832, y: -1065.6324, z: 180.14319}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1417903671}
   m_RootOrder: 3
@@ -2431,7 +2448,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.164251, y: 1}
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2450,6 +2467,7 @@ Transform:
   m_LocalRotation: {x: 0.22137833, y: -0, z: -0, w: 0.975188}
   m_LocalPosition: {x: -554.18317, y: -1062.0812, z: -119.151245}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 253204234}
   m_Father: {fileID: 1417903671}
@@ -2525,6 +2543,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.51678467, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1417903671}
   m_RootOrder: 6
@@ -2559,6 +2578,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: -29.792522, y: 117.3245, z: -158.73416}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1002351508}
   m_RootOrder: 14
@@ -2673,13 +2693,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 1.123}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1804714751}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &285011905
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2692,10 +2713,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &285011906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2737,8 +2760,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &285011909
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2818,6 +2839,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 8.02803, y: -0.0018463135, z: -3.1900024}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 11
@@ -2918,13 +2940,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 1.123}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 10757718}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &289870829
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2937,10 +2960,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &289870830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2982,8 +3007,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &289870833
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3147,13 +3170,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 6.691}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 10757718}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &296262983
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3166,10 +3190,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &296262984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3211,8 +3237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &296262987
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3292,6 +3316,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.401226, y: -0.0018463135, z: -3.7104034}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 14
@@ -3392,13 +3417,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 4.483}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 633479127}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &304620792
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3411,10 +3437,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &304620793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3456,8 +3484,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &304620796
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3536,6 +3562,7 @@ Transform:
   m_LocalRotation: {x: -0.6980755, y: 0, z: -0, w: 0.7160243}
   m_LocalPosition: {x: -0.57, y: 2.01, z: 3.37}
   m_LocalScale: {x: 196.62546, y: 1878.482, z: 207.00067}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2125767498}
   m_RootOrder: 3
@@ -3622,13 +3649,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 6.691}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 633479127}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &339414851
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3641,10 +3669,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &339414852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3686,8 +3716,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &339414855
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3766,6 +3794,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -23.6, y: 117.05, z: -102.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1649365355}
   - {fileID: 1011516838}
@@ -3835,13 +3864,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 4.483}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1277620961}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &372497796
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3854,10 +3884,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &372497797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3899,8 +3931,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &372497800
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3977,6 +4007,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.56718445, y: 0, z: -0.2559662}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 112887794}
   - {fileID: 1871603192}
@@ -4040,13 +4071,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 6.691}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1132924920}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &396886203
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4059,10 +4091,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &396886204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4104,8 +4138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &396886207
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4188,13 +4220,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 1.123}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 615831076}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &403688182
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4207,10 +4240,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &403688183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4252,8 +4287,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &403688186
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4336,13 +4369,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 0}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1380422123}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &417554954
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4355,10 +4389,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &417554955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4400,8 +4436,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &417554958
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4484,13 +4518,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 6.691}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1380422123}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &443391975
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4503,10 +4538,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &443391976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4548,8 +4585,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &443391979
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4632,13 +4667,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 2.247}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 544165719}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &444984897
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4651,10 +4687,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &444984898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4696,8 +4734,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &444984901
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4777,6 +4813,7 @@ Transform:
   m_LocalRotation: {x: 0.017925205, y: 0.99721557, z: -0.069124654, w: 0.021484552}
   m_LocalPosition: {x: -0.15203857, y: 0, z: -2.2474823}
   m_LocalScale: {x: 0.6074126, y: 0.6074126, z: 0.6074126}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 808014305}
   m_RootOrder: 4
@@ -4877,13 +4914,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 4.483}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 615831076}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &456665640
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4896,10 +4934,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &456665641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4941,8 +4981,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &456665644
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5022,6 +5060,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.1739597, y: -0.0018463135, z: -0.35134888}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 24
@@ -5122,13 +5161,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 4.483}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 835751123}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &489608442
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5141,10 +5181,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &489608443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5186,8 +5228,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &489608446
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5266,6 +5306,7 @@ Transform:
   m_LocalRotation: {x: -0.69807535, y: 0, z: -0, w: 0.71602434}
   m_LocalPosition: {x: -0.57, y: 2.03, z: 4.1}
   m_LocalScale: {x: 144.73465, y: 1959.7758, z: 152.37173}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1858681174}
   m_RootOrder: 1
@@ -5349,6 +5390,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.5376186, y: -0.0018463135, z: 1.2862549}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 23
@@ -5462,6 +5504,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.68530273, y: -4.8293457, z: 106.39131}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1417903671}
   m_RootOrder: 7
@@ -5495,6 +5538,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.4352379, y: -0.0018463135, z: -1.3430786}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 17
@@ -5673,6 +5717,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: -28.11, y: 117.3245, z: -132.34}
   m_LocalScale: {x: 0.76, y: 1, z: 0.82}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 395762690}
   m_Father: {fileID: 1002351508}
@@ -5707,6 +5752,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.8336506, y: -0.0018463135, z: 1.5439453}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 21
@@ -5801,6 +5847,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: -0.5, y: 1.255, z: -33.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1570475348}
   - {fileID: 49245124}
@@ -5844,13 +5891,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 5.592}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683553874}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &546326950
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5863,10 +5911,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &546326951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5908,8 +5958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &546326954
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5992,13 +6040,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 3.368}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 835751123}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &557004677
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6011,10 +6060,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &557004678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6056,8 +6107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &557004681
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6295,13 +6344,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 1.123}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1340076958}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &572805721
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6314,10 +6364,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &572805722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6359,8 +6411,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &572805725
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6443,13 +6493,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 3.368}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1277620961}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &576824950
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6462,10 +6513,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &576824951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6507,8 +6560,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &576824954
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6588,6 +6639,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.571043, y: -0.0018463135, z: -1.6388092}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 8
@@ -6688,13 +6740,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 4.483}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1380422123}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &588900043
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6707,10 +6760,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &588900044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6752,8 +6807,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &588900047
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6833,6 +6886,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.38192558, y: -0.0018463135, z: -0.21237183}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 16
@@ -6933,13 +6987,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 5.592}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 10757718}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &596038813
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6952,10 +7007,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &596038814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6997,8 +7054,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &596038817
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7081,13 +7136,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 5.592}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1340076958}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &602254386
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7100,10 +7156,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &602254387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7145,8 +7203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &602254390
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7226,6 +7282,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.4345093, y: -0.0018463135, z: 1.254303}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 2
@@ -7320,6 +7377,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: 4.9, y: 1.255, z: 9}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1498874581}
   - {fileID: 403688181}
@@ -7420,6 +7478,7 @@ Transform:
   m_LocalRotation: {x: 0.24395348, y: -0, z: -0, w: 0.96978694}
   m_LocalPosition: {x: -542.9532, y: -1071.1324, z: 124.54319}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1417903671}
   m_RootOrder: 1
@@ -7454,6 +7513,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -27.64, y: 118.44, z: -65.58}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1002351508}
   m_RootOrder: 4
@@ -7570,13 +7630,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 5.592}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1380422123}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &626425512
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7589,10 +7650,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &626425513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7634,8 +7697,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &626425516
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7794,6 +7855,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -0.78, y: 2.41, z: -21}
   m_LocalScale: {x: 0.40000024, y: 0.5000001, z: 0.4000001}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 932990500}
   m_RootOrder: 7
@@ -7824,6 +7886,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: -0.5, y: 1.255, z: -61.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1891846613}
   - {fileID: 1207256142}
@@ -7867,13 +7930,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 3.368}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 544165719}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &637014481
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7886,10 +7950,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &637014482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7931,8 +7997,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &637014485
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8009,6 +8073,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: 1, y: 1.255, z: 3.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 798594339}
   - {fileID: 1070579593}
@@ -8052,13 +8117,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 6.691}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 615831076}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &692477387
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8071,10 +8137,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &692477388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8116,8 +8184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &692477391
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8196,6 +8262,7 @@ Transform:
   m_LocalRotation: {x: -0.7070936, y: -0.004319442, z: 0.004319442, w: 0.7070936}
   m_LocalPosition: {x: -0.55, y: 1.99, z: 2.75}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2125767498}
   m_RootOrder: 0
@@ -8280,6 +8347,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.36487678, z: 0, w: 0.93105584}
   m_LocalPosition: {x: -25.53, y: 118.44, z: 6.8}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1002351508}
   m_RootOrder: 12
@@ -8414,6 +8482,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 12.41571, y: 122.18884, z: -14.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -8450,13 +8519,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 4.483}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1132924920}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &758234737
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8469,10 +8539,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &758234738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8514,8 +8586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &758234741
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8598,13 +8668,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 6.691}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1277620961}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &761974320
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8617,10 +8688,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &761974321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8662,8 +8735,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &761974324
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8726,7 +8797,7 @@ GameObject:
   - component: {fileID: 765861888}
   - component: {fileID: 765861887}
   - component: {fileID: 765861886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RoadPath
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8743,6 +8814,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 15, y: 1.01, z: 200}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 932990500}
   m_RootOrder: 0
@@ -8838,6 +8910,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -23, y: 117.05, z: -17.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1033604321}
   - {fileID: 1055204675}
@@ -8904,6 +8977,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.9025974, y: -0.0018463135, z: 3.2713928}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 15
@@ -9004,13 +9078,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 0}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683553874}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &798594340
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9023,10 +9098,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &798594341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9068,8 +9145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &798594344
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9147,6 +9222,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: -28.750038, y: 117.3245, z: -175.28241}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1723704097}
   - {fileID: 899077571}
@@ -9199,6 +9275,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.5820255, y: -0.0018463135, z: -3.9046326}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 4
@@ -9299,13 +9376,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 6.691}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1743742616}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &832761254
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9318,10 +9396,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &832761255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9363,8 +9443,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &832761258
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9441,6 +9519,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: -5.2, y: 1.255, z: 22.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 873785815}
   - {fileID: 1263252070}
@@ -9484,13 +9563,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 0}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1132924920}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &844907987
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9503,10 +9583,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &844907988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9548,8 +9630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &844907991
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9643,6 +9723,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 12.949389, y: 3.501069, z: -3.50708}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1251590339}
   m_RootOrder: 3
@@ -9689,6 +9770,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
   m_LocalPosition: {x: -28.12, y: 118.25, z: -38.49}
   m_LocalScale: {x: 10, y: 2.13, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1002351508}
   m_RootOrder: 13
@@ -9788,13 +9870,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 0}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 10757718}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &868847544
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9807,10 +9890,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &868847545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9852,8 +9937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &868847548
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9936,13 +10019,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 0}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1743742616}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &871330549
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9955,10 +10039,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &871330550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10000,8 +10086,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &871330553
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10084,13 +10168,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 0}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 835751123}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &873785816
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10103,10 +10188,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &873785817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10148,8 +10235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &873785820
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10232,13 +10317,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 6.691}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1804714751}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &874722836
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10251,10 +10337,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &874722837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10296,8 +10384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &874722840
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10378,6 +10464,7 @@ Transform:
   m_LocalRotation: {x: 0.035281643, y: -0.042167358, z: -0.22014219, w: 0.9739171}
   m_LocalPosition: {x: 0.8919678, y: 0, z: -0.981308}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 808014305}
   m_RootOrder: 1
@@ -10491,13 +10578,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 1.123}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1743742616}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &899648055
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10510,10 +10598,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &899648056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10555,8 +10645,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &899648059
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10633,6 +10721,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 10757718}
   - {fileID: 1340076958}
@@ -10677,6 +10766,7 @@ Transform:
   m_LocalRotation: {x: -0.69807535, y: 0, z: -0, w: 0.71602434}
   m_LocalPosition: {x: -0.57, y: 2.03, z: 4.1}
   m_LocalScale: {x: 144.73465, y: 1959.7758, z: 152.37173}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 349682233}
   m_RootOrder: 2
@@ -10741,6 +10831,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: -200}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 765861885}
   - {fileID: 2030408124}
@@ -10786,13 +10877,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 5.592}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1804714751}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &933542439
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10805,10 +10897,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &933542440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10850,8 +10944,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &933542443
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10934,13 +11026,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 6.691}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 544165719}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &938617081
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10953,10 +11046,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &938617082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10998,8 +11093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &938617085
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11082,13 +11175,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 1.123}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1277620961}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &965378907
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11101,10 +11195,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &965378908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11146,8 +11242,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &965378911
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11224,6 +11318,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 28.946165, y: -116.8195, z: 79.31658}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2125767498}
   - {fileID: 349682233}
@@ -11275,13 +11370,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 5.592}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1743742616}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1003781382
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11294,10 +11390,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1003781383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11339,8 +11437,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1003781386
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11419,6 +11515,7 @@ Transform:
   m_LocalRotation: {x: -0.6980755, y: 0, z: -0, w: 0.7160243}
   m_LocalPosition: {x: -0.57, y: 2.01, z: 3.37}
   m_LocalScale: {x: 196.62546, y: 1878.482, z: 207.00067}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1858681174}
   m_RootOrder: 3
@@ -11501,6 +11598,7 @@ Transform:
   m_LocalRotation: {x: -0.69807535, y: 0, z: -0, w: 0.71602434}
   m_LocalPosition: {x: -0.57, y: 2.03, z: 4.1}
   m_LocalScale: {x: 144.73465, y: 1959.7758, z: 152.37173}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 349682233}
   m_RootOrder: 1
@@ -11584,6 +11682,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.797161, y: -0.0018463135, z: -1.4858551}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 18
@@ -11684,13 +11783,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 2.247}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 10757718}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1030398768
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11703,10 +11803,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1030398769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11748,8 +11850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1030398772
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11832,13 +11932,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 0}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1804714751}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1030473596
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11851,10 +11952,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1030473597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11896,8 +11999,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1030473600
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11980,13 +12081,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 2.247}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1804714751}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1031322649
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11999,10 +12101,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1031322650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12044,8 +12148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1031322653
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12124,6 +12226,7 @@ Transform:
   m_LocalRotation: {x: -0.7070936, y: -0.004319442, z: 0.004319442, w: 0.7070936}
   m_LocalPosition: {x: -0.55, y: 1.99, z: 2.75}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 766124633}
   m_RootOrder: 0
@@ -12210,13 +12313,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 4.483}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1743742616}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1041954265
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12229,10 +12333,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1041954266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12274,8 +12380,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1041954269
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12354,6 +12458,7 @@ Transform:
   m_LocalRotation: {x: -0.69807535, y: 0, z: -0, w: 0.71602434}
   m_LocalPosition: {x: -0.57, y: 1.51, z: 4.09}
   m_LocalScale: {x: 144.73465, y: 1959.7758, z: 152.37173}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 766124633}
   m_RootOrder: 1
@@ -12440,13 +12545,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 1.123}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683553874}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1070579594
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -12459,10 +12565,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1070579595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12504,8 +12612,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1070579598
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12636,6 +12742,7 @@ Transform:
   m_LocalRotation: {x: 0.22137833, y: -0, z: -0, w: 0.975188}
   m_LocalPosition: {x: -554.18317, y: -1062.0812, z: -119.151245}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1417903671}
   m_RootOrder: 0
@@ -12704,6 +12811,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: -28.806166, y: 117.3245, z: -132.31659}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1002351508}
   m_RootOrder: 7
@@ -12815,6 +12923,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.8945694, y: -0.0018463135, z: -1.9399261}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 10
@@ -12950,6 +13059,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainPrefabObject
       objectReference: {fileID: 0}
+    - target: {fileID: 2614477799710343481, guid: 9d87c42cd9387454daa2aae86f254885,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 471
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d87c42cd9387454daa2aae86f254885, type: 3}
 --- !u!1 &1132924919
@@ -12978,6 +13092,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: 4.9, y: 1.255, z: -42.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 844907986}
   - {fileID: 47865603}
@@ -13039,13 +13154,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 2.247}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 835751123}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1181007028
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13058,10 +13174,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1181007029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13103,8 +13221,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1181007032
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13183,6 +13299,7 @@ Transform:
   m_LocalRotation: {x: -0.6980755, y: 0, z: -0, w: 0.7160243}
   m_LocalPosition: {x: -0.57, y: 2.01, z: 3.37}
   m_LocalScale: {x: 196.62546, y: 1878.482, z: 207.00067}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 766124633}
   m_RootOrder: 3
@@ -13269,13 +13386,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 6.691}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1340076958}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1199566523
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13288,10 +13406,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1199566524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13333,8 +13453,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1199566527
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13417,13 +13535,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 1.123}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 633479127}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1207256143
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13436,10 +13555,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1207256144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13481,8 +13602,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1207256147
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13565,13 +13684,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 3.368}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683553874}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1217917407
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13584,10 +13704,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1217917408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13629,8 +13751,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1217917411
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13713,13 +13833,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 4.483}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1804714751}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1223014206
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13732,10 +13853,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1223014207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13777,8 +13900,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1223014210
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13939,6 +14060,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.44455558, y: 3.694419, z: -300.3551}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 572661971}
   - {fileID: 20041838}
@@ -13979,13 +14101,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 1.123}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 835751123}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1263252071
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13998,10 +14121,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1263252072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14043,8 +14168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1263252075
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14205,6 +14328,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: 0.3, y: 1.255, z: -92.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 153819621}
   - {fileID: 965378906}
@@ -14245,6 +14369,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 6.0218773, y: -0.0018463135, z: -2.070755}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 26
@@ -14339,6 +14464,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: 0.1, y: 1.255, z: 36.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1648149111}
   - {fileID: 572805720}
@@ -14382,13 +14508,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 3.368}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1340076958}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1347719029
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14401,10 +14528,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1347719030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14446,8 +14575,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1347719033
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14527,6 +14654,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.6107826, y: -0.0018463135, z: 2.519104}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 12
@@ -14627,13 +14755,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 2.247}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1132924920}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1360157801
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14646,10 +14775,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1360157802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14691,8 +14822,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1360157805
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14775,13 +14904,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 2.247}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1380422123}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1360358277
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14794,10 +14924,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1360358278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14839,8 +14971,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1360358281
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14920,6 +15050,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.97519493, y: -0.0018463135, z: 3.8110657}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 9
@@ -15014,6 +15145,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: -5.3, y: 1.255, z: -20.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 417554953}
   - {fileID: 1751541998}
@@ -15055,6 +15187,7 @@ Transform:
   m_LocalRotation: {x: 0.026086628, y: 0.71379846, z: -0.02662296, w: 0.69935864}
   m_LocalPosition: {x: 1.6759338, y: 0, z: 0.7538147}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 808014305}
   m_RootOrder: 3
@@ -15168,13 +15301,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 5.592}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1132924920}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1412755065
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15187,10 +15321,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1412755066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15232,8 +15368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1412755069
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15310,6 +15444,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 555.1386, y: 1061.938, z: 120.211914}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1086039524}
   - {fileID: 617869043}
@@ -15354,13 +15489,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 3.368}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1132924920}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1430116846
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15373,10 +15509,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1430116847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15418,8 +15556,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1430116850
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15502,13 +15638,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 2.247}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 633479127}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1432087645
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15521,10 +15658,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1432087646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15566,8 +15705,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1432087649
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15650,13 +15787,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 6.691}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683553874}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1445966986
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15669,10 +15807,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1445966987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15714,8 +15854,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1445966990
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15810,13 +15948,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 5.592}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 633479127}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1467180190
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15829,10 +15968,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1467180191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15874,8 +16015,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1467180194
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15958,13 +16097,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 3.368}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 10757718}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1468028216
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15977,10 +16117,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1468028217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16022,8 +16164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1468028220
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16106,13 +16246,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 0}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 615831076}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1498874582
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16125,10 +16266,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1498874583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16170,8 +16313,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1498874586
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16345,6 +16486,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.6956177, y: 0.17150879, z: 99.769585}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1417903671}
   m_RootOrder: 5
@@ -16381,13 +16523,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 2.247}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1277620961}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1547624953
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16400,10 +16543,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1547624954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16445,8 +16590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1547624957
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16529,13 +16672,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 4.483}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 544165719}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1554743325
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16548,10 +16692,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1554743326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16593,8 +16739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1554743329
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16677,13 +16821,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 0}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 544165719}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1570475349
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16696,10 +16841,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1570475350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16741,8 +16888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1570475353
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16831,13 +16976,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 2.247}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683553874}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1612918963
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16850,10 +16996,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1612918964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16895,8 +17043,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1612918967
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16976,6 +17122,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.7356377, y: -0.0018463135, z: -4.306122}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 3
@@ -17076,13 +17223,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 3.368}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1743742616}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1627290803
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17095,10 +17243,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1627290804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17140,8 +17290,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1627290807
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17224,13 +17372,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 3.368}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1804714751}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1641159933
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17243,10 +17392,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1641159934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17288,8 +17439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1641159937
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17372,13 +17521,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 0}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1340076958}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1648149112
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17391,10 +17541,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1648149113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17436,8 +17588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1648149116
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17516,6 +17666,7 @@ Transform:
   m_LocalRotation: {x: -0.7070936, y: -0.004319442, z: 0.004319442, w: 0.7070936}
   m_LocalPosition: {x: -0.55, y: 1.99, z: 2.75}
   m_LocalScale: {x: 100, y: 100, z: 100}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 349682233}
   m_RootOrder: 0
@@ -17621,6 +17772,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.68566895, y: 0.95983887, z: 195.24187}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1417903671}
   m_RootOrder: 4
@@ -17657,13 +17809,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 5.592}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 615831076}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1710397050
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17676,10 +17829,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1710397051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17721,8 +17876,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1710397054
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17801,6 +17954,7 @@ Transform:
   m_LocalRotation: {x: -0.6980755, y: 0, z: -0, w: 0.7160243}
   m_LocalPosition: {x: -0.57, y: 2.01, z: 3.37}
   m_LocalScale: {x: 196.62546, y: 1878.482, z: 207.00067}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 349682233}
   m_RootOrder: 3
@@ -17885,6 +18039,7 @@ Transform:
   m_LocalRotation: {x: 0.021733785, y: -0.71081686, z: -0.06018759, w: -0.70046026}
   m_LocalPosition: {x: -0.9771118, y: -0.008918762, z: 0.3070984}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 808014305}
   m_RootOrder: 0
@@ -17996,6 +18151,7 @@ Transform:
   m_LocalRotation: {x: 0.2687414, y: -0.16958702, z: -0.13728838, w: 0.93817395}
   m_LocalPosition: {x: 0.7651367, y: 0, z: 1.1024628}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 808014305}
   m_RootOrder: 2
@@ -18106,6 +18262,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.09874344, y: -0.0018463135, z: -2.8719025}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 7
@@ -18200,6 +18357,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: -3.3, y: 1.255, z: -8.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 871330548}
   - {fileID: 899648054}
@@ -18239,6 +18397,7 @@ Transform:
   m_LocalRotation: {x: -0.69807535, y: 0, z: -0, w: 0.71602434}
   m_LocalPosition: {x: -0.57, y: 2.03, z: 4.1}
   m_LocalScale: {x: 144.73465, y: 1959.7758, z: 152.37173}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 766124633}
   m_RootOrder: 2
@@ -18325,13 +18484,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 1.123}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1380422123}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1751541999
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -18344,10 +18504,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1751542000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18389,8 +18551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1751542003
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18470,6 +18630,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -27.87, y: 119.21, z: -38.66658}
   m_LocalScale: {x: 521.4, y: 33.2, z: 150}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1002351508}
   m_RootOrder: 10
@@ -18570,13 +18731,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 2.247}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 615831076}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1776924674
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -18589,10 +18751,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1776924675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18634,8 +18798,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1776924678
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18715,6 +18877,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.7328796, y: -0.0018463135, z: 2.9812775}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 20
@@ -18815,6 +18978,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: -4.1, y: 1.255, z: -64.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1030473595}
   - {fileID: 285011904}
@@ -18858,13 +19022,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 6.691}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 835751123}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1812019350
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -18877,10 +19042,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1812019351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18922,8 +19089,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1812019354
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19006,13 +19171,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 4.483}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683553874}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1818372695
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -19025,10 +19191,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1818372696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19070,8 +19238,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1818372699
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19150,6 +19316,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -23.6, y: 117.05, z: -160}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 105074906}
   - {fileID: 492732187}
@@ -19219,13 +19386,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 3.368}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 615831076}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1865563031
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -19238,10 +19406,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1865563032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19283,8 +19453,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1865563035
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19364,6 +19532,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.027029, y: -0.0018463135, z: 4.1026154}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 1
@@ -19460,6 +19629,7 @@ Transform:
   m_LocalRotation: {x: -0.69807535, y: 0, z: -0, w: 0.71602434}
   m_LocalPosition: {x: -0.57, y: 2.03, z: 4.1}
   m_LocalScale: {x: 144.73465, y: 1959.7758, z: 152.37173}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1858681174}
   m_RootOrder: 2
@@ -19546,13 +19716,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 0}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 633479127}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1891846614
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -19565,10 +19736,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1891846615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19610,8 +19783,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1891846618
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19691,6 +19862,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.4205399, y: -0.0018463135, z: -2.8499146}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 19
@@ -19791,13 +19963,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 3.368}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 633479127}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1939627705
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -19810,10 +19983,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1939627706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19855,8 +20030,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &1939627709
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19942,6 +20115,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.2650223, y: -0.0018463135, z: -3.4170074}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 25
@@ -20042,13 +20216,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 4.483}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1340076958}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2017423511
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20061,10 +20236,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2017423512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20106,8 +20283,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &2017423515
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20187,6 +20362,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6.4170647, y: -0.0018463135, z: -0.5294342}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 5
@@ -20281,6 +20457,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 200}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 932990500}
   m_RootOrder: 1
@@ -20317,13 +20494,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 2.247}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1340076958}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2045462763
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20336,10 +20514,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2045462764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20381,8 +20561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &2045462767
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20461,6 +20639,7 @@ Transform:
   m_LocalRotation: {x: -0.69807535, y: 0, z: -0, w: 0.71602434}
   m_LocalPosition: {x: -0.57, y: 2.03, z: 4.1}
   m_LocalScale: {x: 144.73465, y: 1959.7758, z: 152.37173}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2125767498}
   m_RootOrder: 1
@@ -20547,13 +20726,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 5.592}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 835751123}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2071892008
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20566,10 +20746,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2071892009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20611,8 +20793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &2071892012
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20695,13 +20875,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 4.483}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 10757718}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2106490037
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20714,10 +20895,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2106490038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20759,8 +20942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &2106490041
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20840,6 +21021,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.8699856, y: -0.0018463135, z: -0.1998291}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395762690}
   m_RootOrder: 6
@@ -20940,13 +21122,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.052, z: 5.592}
   m_LocalScale: {x: 2.7, y: 2.7, z: 5.22}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1277620961}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2125504794
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -20959,10 +21142,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2125504795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21004,8 +21189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ce6f3053e1a4748a66ee7012a08d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
-  direction: 0
 --- !u!23 &2125504798
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21084,6 +21267,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -32.9, y: 117.05, z: -23.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 693057513}
   - {fileID: 2071788404}
@@ -21165,6 +21349,7 @@ Transform:
   m_LocalRotation: {x: 0.009786057, y: -0.9281634, z: 0.024466885, w: 0.37123892}
   m_LocalPosition: {x: -33.3, y: 117.2, z: -72.7}
   m_LocalScale: {x: 461.08444, y: 461.08447, z: 461.0844}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1002351508}
   m_RootOrder: 6

@@ -7,11 +7,15 @@ using UnityEngine.UI;
 
 public class MoveLogic : MonoBehaviour
 {
+
+    private const float PLAYER_GROUND_CHECK_SPHERE_SIZE=0.65f;
+
+
+
     [Header("---------KeyboardMovingParameters--------\n")]
-    public static float playerMovementSpeed = 15f;
+    private float playerMovementSpeed = 15f;
     public float jumpHeight = 7f;
     private float Hmovement;
-
 
 
     [Header("---------Scriptable Objects--------\n")]
@@ -65,6 +69,8 @@ public class MoveLogic : MonoBehaviour
     [SerializeField]private InterstialAds interstialAds;
     PlayerPrefsSaveSystem playerPrefsSaveSystem = new PlayerPrefsSaveSystem();
 
+    [SerializeField]private HighScoreScript highScoreScript;
+
 
     [Header("---------Particle System---------\n")]
 
@@ -80,11 +86,12 @@ public class MoveLogic : MonoBehaviour
     private string indexOfMat = "indexOfMaterial1";
 
     [Header("---------Touch Move Parameters---------\n")]
-    public float minClampX;
-    public float maxClampX;
+    public float minClampX;//boundary on left side
+    public float maxClampX;//boundary on right side
     private Touch touch;
 
-
+    [SerializeField] private LayerMask groundLayerMask;
+    [SerializeField] private Transform playerTransform;
 
     private bool isTimerActive = false;
     private int startTime = 4;
@@ -93,7 +100,7 @@ public class MoveLogic : MonoBehaviour
 
     private void Awake()
     {
-        playerMovementSpeed = 15f;
+        playerMovementSpeed = 14f;
     }
     private void Start()
     {
@@ -104,6 +111,7 @@ public class MoveLogic : MonoBehaviour
     private void InitializeVariables()
     {
         isGameOver = false;
+
         whichSkin = PlayerPrefs.GetInt(indexOfMat);
        
         PlayerSphere = transform.GetChild(1).gameObject;
@@ -133,6 +141,8 @@ public class MoveLogic : MonoBehaviour
 
         if (isTimerActive)
             Timer();
+
+        isGrounded = Physics.CheckSphere(playerTransform.position, PLAYER_GROUND_CHECK_SPHERE_SIZE, groundLayerMask);
     }
 
     private void FixedUpdate()
@@ -144,14 +154,26 @@ public class MoveLogic : MonoBehaviour
             if (tempControlsValue == 1)
                 GyroControls();
         }
+
+        IncreaseSpeedAfterSomeTime();
+    }
+    public void IncreaseSpeedAfterSomeTime()
+    {
+        float score=highScoreScript.GetCurrentScore();
+        if (score > 2000 && score < 3000) playerMovementSpeed = 16f;
+        if (score > 3000 && score < 4500) playerMovementSpeed = 16.7f;
+        if (score > 4500 && score < 5500) playerMovementSpeed = 17.5f;
+        if (score > 5500 && score < 6500) playerMovementSpeed = 18.5f;
+        if (score > 6500 && score < 8000) playerMovementSpeed = 19.7f;
+        if (score > 8000) playerMovementSpeed = 21f;
     }
     public void Jump()
     {
         if (isGrounded)
         {
-            SoundManager.PlaySound(SoundManager.Sound.Jump);
             isGrounded = false;
             rigidBody.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);
+            SoundManager.PlaySound(SoundManager.Sound.Jump);
         }
     }
     public void JumpDown()
@@ -159,6 +181,7 @@ public class MoveLogic : MonoBehaviour
         if(!isGrounded)
         {
             rigidBody.AddForce(Vector3.down*jumpHeight*2,ForceMode.Impulse);
+            isGrounded=true;
         }
     }
     private void KeyboardControls()
@@ -203,15 +226,6 @@ public class MoveLogic : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
-        }
-
         if (collision.collider.CompareTag("Enemy") && this.gameObject.tag == "Player")
         {
             Gameover();
@@ -220,7 +234,6 @@ public class MoveLogic : MonoBehaviour
         {
             Gameover();
         }
-
     }
     private void Gameover()
     {
@@ -336,15 +349,6 @@ public class MoveLogic : MonoBehaviour
         Stars.SetActive(false);
         bGDisable.EnableAllBgComponents();
     }
-    IEnumerator DestroyNearbyObjects()
-    {
-        duplicatePlayerCollider.transform.position=transform.position;
-        duplicatePlayerCollider.GetComponent<SphereCollider>().enabled = true;
-        yield return new WaitForSeconds(1f);
-        duplicatePlayerCollider.GetComponent<SphereCollider>().enabled = false;
-        yield return new WaitForSeconds(0.5f);
-        this.gameObject.tag = "Player";
-    }
 
     private void ResumePlayerMovement()
     {
@@ -366,7 +370,16 @@ public class MoveLogic : MonoBehaviour
         GameOverUI.SetActive(false);
         isTimerActive = true;
         StartCoroutine(DestroyNearbyObjects());
+    }
 
+    IEnumerator DestroyNearbyObjects()
+    {
+        duplicatePlayerCollider.transform.position=transform.position;
+        duplicatePlayerCollider.GetComponent<SphereCollider>().enabled = true;
+        yield return new WaitForSeconds(1f);
+        duplicatePlayerCollider.GetComponent<SphereCollider>().enabled = false;
+        yield return new WaitForSeconds(0.5f);
+        this.gameObject.tag = "Player";
     }
     private void Timer()
     {

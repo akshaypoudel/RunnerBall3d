@@ -51,3 +51,17 @@ The following packages were added:
   com.unity.2d.spriteshape@5.1.5
   com.unity.modules.terrain@1.0.0
   com.unity.modules.terrainphysics@1.0.0
+
+=== Tue Aug 29 16:52:13 2023
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.2d.animation from version 5.0.9 to 7.0.11
+  com.unity.2d.spriteshape from version 5.1.5 to 7.0.7
+  com.unity.ads from version 4.2.1 to 4.4.2
+  com.unity.cinemachine from version 2.7.9 to 2.8.9
+  com.unity.ide.visualstudio from version 2.0.15 to 2.0.18
+  com.unity.test-framework from version 1.1.31 to 1.1.33
+  com.unity.timeline from version 1.5.7 to 1.6.5

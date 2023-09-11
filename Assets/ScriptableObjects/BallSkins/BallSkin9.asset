@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3a4d64f4a598040a1c08790eca8050, type: 3}
   m_Name: BallSkin9
   m_EditorClassIdentifier: 
-  Price: 15000
+  Price: 6000
   NameOfSkin: SilverBall
   materialOfObject: {fileID: 0}
-  baseCost: 15000
+  baseCost: 6000

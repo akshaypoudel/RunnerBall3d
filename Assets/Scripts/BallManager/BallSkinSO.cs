@@ -7,8 +7,6 @@ public class BallSkinSO : ScriptableObject
 {
     public string Price;
     public string NameOfSkin;
-    private Image PreviewImage;
-    public Material materialOfObject;
     public int baseCost;
 }
 
